@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+extension URL {
+    
+    static func forJongroBusByNumber(_ busNumber: Int ) -> URL? {
+        return URL(string: "\(APIConstants.BusBasic)/bus/jongro\(busNumber)")
+    }
+}

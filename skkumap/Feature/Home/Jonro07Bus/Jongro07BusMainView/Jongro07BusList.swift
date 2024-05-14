@@ -1,5 +1,5 @@
 //
-//  HSSCBusListView.swift
+//  Jongro07BusListView.swift
 //  skkumap
 //
 //  Created by 조승용 on 2023/12/31.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct HSSCBusListView: View {
-    var body: some View 
+struct Jongro07BusListView: View {
+    var body: some View
     
     {
         
-        @ObservedObject var HSSCBusComponentViewModel = HSSCBusComponentVM()
+        @ObservedObject var Jongro07BusMainViewModel = Jongro07BusMainVM()
         
         ScrollViewReader { proxy in
             ScrollView(showsIndicators: false) {
@@ -21,11 +21,11 @@ struct HSSCBusListView: View {
                         Spacer()
                             .frame(height: 5)
                             .id("ScrollTop")
-                        ForEach(Array(HSSCBusComponentViewModel.stations.enumerated()), id: \.element.number) { (index, station) in
+                        ForEach(Jongro07BusMainViewModel.stations, id: \.stationId) { station in
                             HSSCBusListComponentView(
                                 stationName: station.name,
-                                stationNumber: station.number,
-                                eta: station.eta,
+                                stationNumber: String(station.stationId),
+                                eta: station.StationMessage,
                                 isFirstStation: station.isFirstStation,
                                 isLastStation: station.isLastStation,
                                 isRotationStation: station.isRotationStation
@@ -101,5 +101,5 @@ struct HSSCBusListView: View {
 }
 
 #Preview {
-    HSSCBusListView()
+    Jongro07BusListView()
 }

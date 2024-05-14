@@ -43,14 +43,40 @@ struct homewidget02EntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Emoji:")
-            Text(entry.emoji)
+        
+        ZStack {
+            ContainerRelativeShape()
+                .fill(LinearGradient(gradient: Gradient(colors: [.customDeepGreen2, .customDeepGreen3, .customDeepGreen4]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                
+            
+            VStack {
+                HStack{
+                    Image("skkulogo1")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60, height: 60)
+                    Spacer()
+                }
+                Spacer()
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("스꾸라이프")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundColor(.white)
+                        Text("인사캠 셔틀버스")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundColor(.white)
+                    }.padding(8)
+                    
+                    
+                    Spacer()
+                }
+                    
+                
+            }.padding(10)
         }
     }
+       
 }
 
 struct homewidget02: Widget {
@@ -67,8 +93,9 @@ struct homewidget02: Widget {
                     .background()
             }
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .contentMarginsDisabled()
+        .configurationDisplayName("스꾸버스")
+        .description("인사캠 셔틀버스 바로가기")
     }
 }
 

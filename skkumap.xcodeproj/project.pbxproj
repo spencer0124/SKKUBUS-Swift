@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023BE5A52911D38624E32814 /* Pods_skkumap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF3A78AF985683E00DBA27 /* Pods_skkumap.framework */; };
+		9A5AF5C20E815D7BFA934C0E /* Pods_skkumapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05128ED7D5607FB1094C8F7 /* Pods_skkumapTests.framework */; };
+		C43067D72B458D25008BF4D4 /* Jongro07BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D62B458D25008BF4D4 /* Jongro07BusModel.swift */; };
+		C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D92B4594DC008BF4D4 /* HTTPClient.swift */; };
+		C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067DB2B45957B008BF4D4 /* URL+extension.swift */; };
+		C43067DE2B468A28008BF4D4 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067DD2B468A28008BF4D4 /* DraggableView.swift */; };
+		C4636C6A2B45596100CA68D5 /* BusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4636C692B45596100CA68D5 /* BusType.swift */; };
 		C471795C2B34307E0039D376 /* skkumapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471795B2B34307E0039D376 /* skkumapApp.swift */; };
 		C471795E2B34307E0039D376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471795D2B34307E0039D376 /* ContentView.swift */; };
 		C47179602B34307F0039D376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C471795F2B34307F0039D376 /* Assets.xcassets */; };
@@ -14,6 +21,53 @@
 		C471796D2B34307F0039D376 /* skkumapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471796C2B34307F0039D376 /* skkumapTests.swift */; };
 		C47179772B34307F0039D376 /* skkumapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179762B34307F0039D376 /* skkumapUITests.swift */; };
 		C47179792B34307F0039D376 /* skkumapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179782B34307F0039D376 /* skkumapUITestsLaunchTests.swift */; };
+		C471798A2B3432620039D376 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179892B3432620039D376 /* HomeView.swift */; };
+		C471798C2B34326C0039D376 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471798B2B34326C0039D376 /* HomeViewModel.swift */; };
+		C471798F2B3432AD0039D376 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471798E2B3432AC0039D376 /* MapViewModel.swift */; };
+		C47179912B3432B40039D376 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179902B3432B40039D376 /* MapView.swift */; };
+		C47179932B3433510039D376 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47179922B3433510039D376 /* Launch Screen.storyboard */; };
+		C47609692BF343AD00FE17EB /* Webview_building.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47609682BF343AD00FE17EB /* Webview_building.swift */; };
+		C476096B2BF3AEDF00FE17EB /* Webview_buildingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096A2BF3AEDF00FE17EB /* Webview_buildingModel.swift */; };
+		C476096E2BF3B09400FE17EB /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096D2BF3B09400FE17EB /* NetworkMonitor.swift */; };
+		C47609702BF3BEE400FE17EB /* NetworkAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */; };
+		C4A6E9B62B35CFB0001545DA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2412B34767200CD8C0B /* WidgetKit.framework */; };
+		C4A6E9B72B35CFB0001545DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2432B34767200CD8C0B /* SwiftUI.framework */; };
+		C4A6E9BA2B35CFB0001545DA /* BusArrivalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */; };
+		C4A6E9BC2B35CFB0001545DA /* BusArrivalLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */; };
+		C4A6E9BE2B35CFB0001545DA /* BusArrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9BD2B35CFB0001545DA /* BusArrival.swift */; };
+		C4A6E9C02B35CFB1001545DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A6E9BF2B35CFB1001545DA /* Assets.xcassets */; };
+		C4A6E9C42B35CFB1001545DA /* BusArrivalExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4A6E9CB2B35D7A4001545DA /* BusArrivalLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */; };
+		C4BDF22D2B43FE3900733458 /* SubwayCircleIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF22C2B43FE3900733458 /* SubwayCircleIcon.swift */; };
+		C4BDF2312B44044E00733458 /* UIScreen+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF2302B44044E00733458 /* UIScreen+extension.swift */; };
+		C4BDF2352B44062A00733458 /* BusMainNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF2342B44062A00733458 /* BusMainNavigationBar.swift */; };
+		C4BDF2372B4406BF00733458 /* BusMainBtnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF2362B4406BF00733458 /* BusMainBtnType.swift */; };
+		C4BDF23A2B4410D700733458 /* TopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF2392B4410D700733458 /* TopInfo.swift */; };
+		C4BDF23C2B4410F100733458 /* TopInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF23B2B4410F100733458 /* TopInfoType.swift */; };
+		C4BDF23E2B45155000733458 /* LicensePlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF23D2B45155000733458 /* LicensePlate.swift */; };
+		C4BDF2412B45311C00733458 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C4BDF2402B45311C00733458 /* Lottie */; };
+		C4BDF2452B4531B500733458 /* refresh_white.json in Resources */ = {isa = PBXBuildFile; fileRef = C4BDF2442B4531B500733458 /* refresh_white.json */; };
+		C4C5C3312B40659800B588C8 /* Jongro07BusMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3302B40659800B588C8 /* Jongro07BusMainView.swift */; };
+		C4C5C3352B40780900B588C8 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
+		C4C5C3372B411C1D00B588C8 /* BusListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3362B411C1D00B588C8 /* BusListComponent.swift */; };
+		C4C5C33A2B411C4500B588C8 /* Jongro07BusMainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3392B411C4500B588C8 /* Jongro07BusMainVM.swift */; };
+		C4C5C33C2B4181B800B588C8 /* BusAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C33B2B4181B800B588C8 /* BusAnimation.swift */; };
+		C4C5C33E2B41996E00B588C8 /* Jongro07BusList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C33D2B41996E00B588C8 /* Jongro07BusList.swift */; };
+		C4C5C3402B41998500B588C8 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C33F2B41998500B588C8 /* RefreshButton.swift */; };
+		C4C5C3442B419A6300B588C8 /* BottomAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3432B419A6300B588C8 /* BottomAdView.swift */; };
+		C4C5C3462B419A9C00B588C8 /* TopSafeAreaColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3452B419A9C00B588C8 /* TopSafeAreaColorView.swift */; };
+		C4CFD2422B34767200CD8C0B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2412B34767200CD8C0B /* WidgetKit.framework */; };
+		C4CFD2442B34767200CD8C0B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2432B34767200CD8C0B /* SwiftUI.framework */; };
+		C4CFD2472B34767200CD8C0B /* homewidget02Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFD2462B34767200CD8C0B /* homewidget02Bundle.swift */; };
+		C4CFD2492B34767200CD8C0B /* homewidget02.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFD2482B34767200CD8C0B /* homewidget02.swift */; };
+		C4CFD24B2B34767300CD8C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CFD24A2B34767300CD8C0B /* Assets.xcassets */; };
+		C4CFD24F2B34767300CD8C0B /* homewidget02Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4CFD2402B34767200CD8C0B /* homewidget02Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4D49D332B36A7B3003D19C6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D49D322B36A7B3003D19C6 /* Map.swift */; };
+		C4D49D362B36B7D9003D19C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D49D352B36B7D9003D19C6 /* Constants.swift */; };
+		C4DDAABC2B373CBF008A8C39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4DDAABB2B373CBF008A8C39 /* GoogleService-Info.plist */; };
+		C4DDAABF2B373D86008A8C39 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C4DDAABE2B373D86008A8C39 /* FirebaseFirestore */; };
+		C4DDAAC12B373D86008A8C39 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C4DDAAC02B373D86008A8C39 /* FirebaseFirestoreSwift */; };
+		E6BC24EEAA42BB21A88B007A /* Pods_skkumap_skkumapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7106FC5E569C33E0F07E27F /* Pods_skkumap_skkumapUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +85,48 @@
 			remoteGlobalIDString = C47179572B34307E0039D376;
 			remoteInfo = skkumap;
 		};
+		C4A6E9C22B35CFB1001545DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C47179502B34307E0039D376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A6E9B42B35CFB0001545DA;
+			remoteInfo = BusArrivalExtension;
+		};
+		C4CFD24D2B34767300CD8C0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C47179502B34307E0039D376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4CFD23F2B34767200CD8C0B;
+			remoteInfo = homewidget02Extension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C4CFD2532B34767300CD8C0B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4CFD24F2B34767300CD8C0B /* homewidget02Extension.appex in Embed Foundation Extensions */,
+				C4A6E9C42B35CFB1001545DA /* BusArrivalExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A08C2DC0EB52A9B12601353 /* Pods-skkumap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumap.release.xcconfig"; path = "Target Support Files/Pods-skkumap/Pods-skkumap.release.xcconfig"; sourceTree = "<group>"; };
+		3BD878F8634C0D324225C245 /* Pods-skkumap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumap.debug.xcconfig"; path = "Target Support Files/Pods-skkumap/Pods-skkumap.debug.xcconfig"; sourceTree = "<group>"; };
+		58F590F62FABCD9F8A5D4A27 /* Pods-skkumapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumapTests.release.xcconfig"; path = "Target Support Files/Pods-skkumapTests/Pods-skkumapTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A22EC62DC3201CF5A36ED77 /* Pods-skkumap-skkumapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumap-skkumapUITests.release.xcconfig"; path = "Target Support Files/Pods-skkumap-skkumapUITests/Pods-skkumap-skkumapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B7106FC5E569C33E0F07E27F /* Pods_skkumap_skkumapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skkumap_skkumapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43067D62B458D25008BF4D4 /* Jongro07BusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusModel.swift; sourceTree = "<group>"; };
+		C43067D92B4594DC008BF4D4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		C43067DB2B45957B008BF4D4 /* URL+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+extension.swift"; sourceTree = "<group>"; };
+		C43067DD2B468A28008BF4D4 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		C4636C692B45596100CA68D5 /* BusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusType.swift; sourceTree = "<group>"; };
 		C47179582B34307E0039D376 /* skkumap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skkumap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C471795B2B34307E0039D376 /* skkumapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skkumapApp.swift; sourceTree = "<group>"; };
 		C471795D2B34307E0039D376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +137,54 @@
 		C47179722B34307F0039D376 /* skkumapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skkumapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47179762B34307F0039D376 /* skkumapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skkumapUITests.swift; sourceTree = "<group>"; };
 		C47179782B34307F0039D376 /* skkumapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skkumapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C47179892B3432620039D376 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C471798B2B34326C0039D376 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C471798E2B3432AC0039D376 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		C47179902B3432B40039D376 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C47179922B3433510039D376 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C47179952B3448500039D376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C47609682BF343AD00FE17EB /* Webview_building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview_building.swift; sourceTree = "<group>"; };
+		C476096A2BF3AEDF00FE17EB /* Webview_buildingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview_buildingModel.swift; sourceTree = "<group>"; };
+		C476096D2BF3B09400FE17EB /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAlertBanner.swift; sourceTree = "<group>"; };
+		C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusArrivalExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalBundle.swift; sourceTree = "<group>"; };
+		C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalLiveActivity.swift; sourceTree = "<group>"; };
+		C4A6E9BD2B35CFB0001545DA /* BusArrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrival.swift; sourceTree = "<group>"; };
+		C4A6E9BF2B35CFB1001545DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4A6E9C12B35CFB1001545DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4BDF22C2B43FE3900733458 /* SubwayCircleIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayCircleIcon.swift; sourceTree = "<group>"; };
+		C4BDF2302B44044E00733458 /* UIScreen+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+extension.swift"; sourceTree = "<group>"; };
+		C4BDF2342B44062A00733458 /* BusMainNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusMainNavigationBar.swift; sourceTree = "<group>"; };
+		C4BDF2362B4406BF00733458 /* BusMainBtnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusMainBtnType.swift; sourceTree = "<group>"; };
+		C4BDF2392B4410D700733458 /* TopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopInfo.swift; sourceTree = "<group>"; };
+		C4BDF23B2B4410F100733458 /* TopInfoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopInfoType.swift; sourceTree = "<group>"; };
+		C4BDF23D2B45155000733458 /* LicensePlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePlate.swift; sourceTree = "<group>"; };
+		C4BDF2442B4531B500733458 /* refresh_white.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = refresh_white.json; sourceTree = "<group>"; };
+		C4C5C3302B40659800B588C8 /* Jongro07BusMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusMainView.swift; sourceTree = "<group>"; };
+		C4C5C3342B40780900B588C8 /* Color+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
+		C4C5C3362B411C1D00B588C8 /* BusListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListComponent.swift; sourceTree = "<group>"; };
+		C4C5C3392B411C4500B588C8 /* Jongro07BusMainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusMainVM.swift; sourceTree = "<group>"; };
+		C4C5C33B2B4181B800B588C8 /* BusAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAnimation.swift; sourceTree = "<group>"; };
+		C4C5C33D2B41996E00B588C8 /* Jongro07BusList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusList.swift; sourceTree = "<group>"; };
+		C4C5C33F2B41998500B588C8 /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		C4C5C3432B419A6300B588C8 /* BottomAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAdView.swift; sourceTree = "<group>"; };
+		C4C5C3452B419A9C00B588C8 /* TopSafeAreaColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSafeAreaColorView.swift; sourceTree = "<group>"; };
+		C4CFD23B2B3473F900CD8C0B /* skkumap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = skkumap.entitlements; sourceTree = "<group>"; };
+		C4CFD2402B34767200CD8C0B /* homewidget02Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = homewidget02Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4CFD2412B34767200CD8C0B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C4CFD2432B34767200CD8C0B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C4CFD2462B34767200CD8C0B /* homewidget02Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homewidget02Bundle.swift; sourceTree = "<group>"; };
+		C4CFD2482B34767200CD8C0B /* homewidget02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homewidget02.swift; sourceTree = "<group>"; };
+		C4CFD24A2B34767300CD8C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4CFD24C2B34767300CD8C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D49D322B36A7B3003D19C6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		C4D49D352B36B7D9003D19C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C4DDAABB2B373CBF008A8C39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDFC36140CDF35C089B0EE63 /* Pods-skkumapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumapTests.debug.xcconfig"; path = "Target Support Files/Pods-skkumapTests/Pods-skkumapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E05128ED7D5607FB1094C8F7 /* Pods_skkumapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skkumapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BF3A78AF985683E00DBA27 /* Pods_skkumap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skkumap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB252B665D2E518E6549F881 /* Pods-skkumap-skkumapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumap-skkumapUITests.debug.xcconfig"; path = "Target Support Files/Pods-skkumap-skkumapUITests/Pods-skkumap-skkumapUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +192,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023BE5A52911D38624E32814 /* Pods_skkumap.framework in Frameworks */,
+				C4DDAABF2B373D86008A8C39 /* FirebaseFirestore in Frameworks */,
+				C4DDAAC12B373D86008A8C39 /* FirebaseFirestoreSwift in Frameworks */,
+				C4BDF2412B45311C00733458 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5AF5C20E815D7BFA934C0E /* Pods_skkumapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,19 +211,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BC24EEAA42BB21A88B007A /* Pods_skkumap_skkumapUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A6E9B22B35CFB0001545DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A6E9B72B35CFB0001545DA /* SwiftUI.framework in Frameworks */,
+				C4A6E9B62B35CFB0001545DA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4CFD23D2B34767200CD8C0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4CFD2442B34767200CD8C0B /* SwiftUI.framework in Frameworks */,
+				C4CFD2422B34767200CD8C0B /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26B9EBA0D2FF642BFA83B6B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BD878F8634C0D324225C245 /* Pods-skkumap.debug.xcconfig */,
+				1A08C2DC0EB52A9B12601353 /* Pods-skkumap.release.xcconfig */,
+				FB252B665D2E518E6549F881 /* Pods-skkumap-skkumapUITests.debug.xcconfig */,
+				7A22EC62DC3201CF5A36ED77 /* Pods-skkumap-skkumapUITests.release.xcconfig */,
+				DDFC36140CDF35C089B0EE63 /* Pods-skkumapTests.debug.xcconfig */,
+				58F590F62FABCD9F8A5D4A27 /* Pods-skkumapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3A334C464F7CD4AFD81ADE6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7BF3A78AF985683E00DBA27 /* Pods_skkumap.framework */,
+				C4CFD2412B34767200CD8C0B /* WidgetKit.framework */,
+				C4CFD2432B34767200CD8C0B /* SwiftUI.framework */,
+				B7106FC5E569C33E0F07E27F /* Pods_skkumap_skkumapUITests.framework */,
+				E05128ED7D5607FB1094C8F7 /* Pods_skkumapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C43067D82B4594C0008BF4D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C43067D92B4594DC008BF4D4 /* HTTPClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C471794F2B34307E0039D376 = {
 			isa = PBXGroup;
 			children = (
+				C4DDAABB2B373CBF008A8C39 /* GoogleService-Info.plist */,
+				C43067D82B4594C0008BF4D4 /* Services */,
+				C47179852B3432130039D376 /* App */,
+				C4C5C3412B419A3B00B588C8 /* Component */,
+				C4C5C3322B4077F800B588C8 /* extension */,
+				C4D49D342B36B7CB003D19C6 /* Utils */,
 				C471795A2B34307E0039D376 /* skkumap */,
 				C471796B2B34307F0039D376 /* skkumapTests */,
 				C47179752B34307F0039D376 /* skkumapUITests */,
+				C4CFD2452B34767200CD8C0B /* homewidget02 */,
+				C4A6E9B82B35CFB0001545DA /* BusArrival */,
 				C47179592B34307E0039D376 /* Products */,
+				26B9EBA0D2FF642BFA83B6B0 /* Pods */,
+				3A334C464F7CD4AFD81ADE6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +295,8 @@
 				C47179582B34307E0039D376 /* skkumap.app */,
 				C47179682B34307F0039D376 /* skkumapTests.xctest */,
 				C47179722B34307F0039D376 /* skkumapUITests.xctest */,
+				C4CFD2402B34767200CD8C0B /* homewidget02Extension.appex */,
+				C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +304,10 @@
 		C471795A2B34307E0039D376 /* skkumap */ = {
 			isa = PBXGroup;
 			children = (
-				C471795B2B34307E0039D376 /* skkumapApp.swift */,
+				C4CFD23B2B3473F900CD8C0B /* skkumap.entitlements */,
+				C47179952B3448500039D376 /* Info.plist */,
+				C47179942B3442300039D376 /* Model */,
+				C47179862B3432370039D376 /* Feature */,
 				C471795D2B34307E0039D376 /* ContentView.swift */,
 				C471795F2B34307F0039D376 /* Assets.xcassets */,
 				C47179612B34307F0039D376 /* Preview Content */,
@@ -127,6 +340,216 @@
 			path = skkumapUITests;
 			sourceTree = "<group>";
 		};
+		C47179852B3432130039D376 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C47179922B3433510039D376 /* Launch Screen.storyboard */,
+				C471795B2B34307E0039D376 /* skkumapApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C47179862B3432370039D376 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				C476096C2BF3B08000FE17EB /* NetworkMonitor */,
+				C47179882B34324B0039D376 /* Home */,
+				C47179872B3432420039D376 /* Onboarding */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		C47179872B3432420039D376 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C47179882B34324B0039D376 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C47609672BF3438100FE17EB /* Webview_building */,
+				C4C5C32F2B40655B00B588C8 /* Jonro07Bus */,
+				C471798D2B3432990039D376 /* Map */,
+				C47179892B3432620039D376 /* HomeView.swift */,
+				C471798B2B34326C0039D376 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C471798D2B3432990039D376 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C471798E2B3432AC0039D376 /* MapViewModel.swift */,
+				C47179902B3432B40039D376 /* MapView.swift */,
+				C43067DD2B468A28008BF4D4 /* DraggableView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C47179942B3442300039D376 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4636C692B45596100CA68D5 /* BusType.swift */,
+				C4D49D302B36A76F003D19C6 /* Home */,
+				C4D49D2F2B36A763003D19C6 /* Onboarding */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C47609672BF3438100FE17EB /* Webview_building */ = {
+			isa = PBXGroup;
+			children = (
+				C47609682BF343AD00FE17EB /* Webview_building.swift */,
+				C476096A2BF3AEDF00FE17EB /* Webview_buildingModel.swift */,
+			);
+			path = Webview_building;
+			sourceTree = "<group>";
+		};
+		C476096C2BF3B08000FE17EB /* NetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				C476096D2BF3B09400FE17EB /* NetworkMonitor.swift */,
+				C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */,
+			);
+			path = NetworkMonitor;
+			sourceTree = "<group>";
+		};
+		C4A6E9B82B35CFB0001545DA /* BusArrival */ = {
+			isa = PBXGroup;
+			children = (
+				C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */,
+				C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */,
+				C4A6E9BD2B35CFB0001545DA /* BusArrival.swift */,
+				C4A6E9BF2B35CFB1001545DA /* Assets.xcassets */,
+				C4A6E9C12B35CFB1001545DA /* Info.plist */,
+			);
+			path = BusArrival;
+			sourceTree = "<group>";
+		};
+		C4BDF2292B43FB5D00733458 /* Jongro07BusMainView */ = {
+			isa = PBXGroup;
+			children = (
+				C4C5C3392B411C4500B588C8 /* Jongro07BusMainVM.swift */,
+				C4C5C3302B40659800B588C8 /* Jongro07BusMainView.swift */,
+				C4C5C33D2B41996E00B588C8 /* Jongro07BusList.swift */,
+			);
+			path = Jongro07BusMainView;
+			sourceTree = "<group>";
+		};
+		C4BDF22A2B43FB7100733458 /* Jongro07BusDetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Jongro07BusDetailView;
+			sourceTree = "<group>";
+		};
+		C4C5C32F2B40655B00B588C8 /* Jonro07Bus */ = {
+			isa = PBXGroup;
+			children = (
+				C4BDF22A2B43FB7100733458 /* Jongro07BusDetailView */,
+				C4BDF2292B43FB5D00733458 /* Jongro07BusMainView */,
+			);
+			path = Jonro07Bus;
+			sourceTree = "<group>";
+		};
+		C4C5C3322B4077F800B588C8 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				C4C5C3342B40780900B588C8 /* Color+extension.swift */,
+				C4BDF2302B44044E00733458 /* UIScreen+extension.swift */,
+				C43067DB2B45957B008BF4D4 /* URL+extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		C4C5C3382B411C3800B588C8 /* Jongro07Bus */ = {
+			isa = PBXGroup;
+			children = (
+				C43067D62B458D25008BF4D4 /* Jongro07BusModel.swift */,
+			);
+			path = Jongro07Bus;
+			sourceTree = "<group>";
+		};
+		C4C5C3412B419A3B00B588C8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				C4C5C3472B419AD900B588C8 /* Bus */,
+				C4C5C3422B419A4700B588C8 /* NavigationBar */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		C4C5C3422B419A4700B588C8 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				C4C5C3432B419A6300B588C8 /* BottomAdView.swift */,
+				C4C5C3452B419A9C00B588C8 /* TopSafeAreaColorView.swift */,
+				C4BDF2342B44062A00733458 /* BusMainNavigationBar.swift */,
+				C4BDF2362B4406BF00733458 /* BusMainBtnType.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		C4C5C3472B419AD900B588C8 /* Bus */ = {
+			isa = PBXGroup;
+			children = (
+				C4BDF22C2B43FE3900733458 /* SubwayCircleIcon.swift */,
+				C4C5C3362B411C1D00B588C8 /* BusListComponent.swift */,
+				C4BDF23D2B45155000733458 /* LicensePlate.swift */,
+				C4C5C33B2B4181B800B588C8 /* BusAnimation.swift */,
+				C4C5C33F2B41998500B588C8 /* RefreshButton.swift */,
+				C4BDF2442B4531B500733458 /* refresh_white.json */,
+				C4BDF2392B4410D700733458 /* TopInfo.swift */,
+				C4BDF23B2B4410F100733458 /* TopInfoType.swift */,
+			);
+			path = Bus;
+			sourceTree = "<group>";
+		};
+		C4CFD2452B34767200CD8C0B /* homewidget02 */ = {
+			isa = PBXGroup;
+			children = (
+				C4CFD2462B34767200CD8C0B /* homewidget02Bundle.swift */,
+				C4CFD2482B34767200CD8C0B /* homewidget02.swift */,
+				C4CFD24A2B34767300CD8C0B /* Assets.xcassets */,
+				C4CFD24C2B34767300CD8C0B /* Info.plist */,
+			);
+			path = homewidget02;
+			sourceTree = "<group>";
+		};
+		C4D49D2F2B36A763003D19C6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C4D49D302B36A76F003D19C6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C4C5C3382B411C3800B588C8 /* Jongro07Bus */,
+				C4D49D312B36A77A003D19C6 /* Map */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C4D49D312B36A77A003D19C6 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C4D49D322B36A7B3003D19C6 /* Map.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C4D49D342B36B7CB003D19C6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4D49D352B36B7D9003D19C6 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +557,25 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C471797C2B34307F0039D376 /* Build configuration list for PBXNativeTarget "skkumap" */;
 			buildPhases = (
+				7963A18B168A92C5B759041C /* [CP] Check Pods Manifest.lock */,
 				C47179542B34307E0039D376 /* Sources */,
 				C47179552B34307E0039D376 /* Frameworks */,
 				C47179562B34307E0039D376 /* Resources */,
+				7D1CB549F53C420BA00ADD4E /* [CP] Embed Pods Frameworks */,
+				C4CFD2532B34767300CD8C0B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4CFD24E2B34767300CD8C0B /* PBXTargetDependency */,
+				C4A6E9C32B35CFB1001545DA /* PBXTargetDependency */,
 			);
 			name = skkumap;
+			packageProductDependencies = (
+				C4DDAABE2B373D86008A8C39 /* FirebaseFirestore */,
+				C4DDAAC02B373D86008A8C39 /* FirebaseFirestoreSwift */,
+				C4BDF2402B45311C00733458 /* Lottie */,
+			);
 			productName = skkumap;
 			productReference = C47179582B34307E0039D376 /* skkumap.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +584,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C471797F2B34307F0039D376 /* Build configuration list for PBXNativeTarget "skkumapTests" */;
 			buildPhases = (
+				A2EDEF13F7EF049BDDE7B877 /* [CP] Check Pods Manifest.lock */,
 				C47179642B34307F0039D376 /* Sources */,
 				C47179652B34307F0039D376 /* Frameworks */,
 				C47179662B34307F0039D376 /* Resources */,
@@ -169,9 +603,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C47179822B34307F0039D376 /* Build configuration list for PBXNativeTarget "skkumapUITests" */;
 			buildPhases = (
+				448206FBEDF5557E52609ED2 /* [CP] Check Pods Manifest.lock */,
 				C471796E2B34307F0039D376 /* Sources */,
 				C471796F2B34307F0039D376 /* Frameworks */,
 				C47179702B34307F0039D376 /* Resources */,
+				F1E02170BE591770216C4683 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +618,40 @@
 			productName = skkumapUITests;
 			productReference = C47179722B34307F0039D376 /* skkumapUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C4A6E9B42B35CFB0001545DA /* BusArrivalExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A6E9C52B35CFB1001545DA /* Build configuration list for PBXNativeTarget "BusArrivalExtension" */;
+			buildPhases = (
+				C4A6E9B12B35CFB0001545DA /* Sources */,
+				C4A6E9B22B35CFB0001545DA /* Frameworks */,
+				C4A6E9B32B35CFB0001545DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusArrivalExtension;
+			productName = BusArrivalExtension;
+			productReference = C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C4CFD23F2B34767200CD8C0B /* homewidget02Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4CFD2502B34767300CD8C0B /* Build configuration list for PBXNativeTarget "homewidget02Extension" */;
+			buildPhases = (
+				C4CFD23C2B34767200CD8C0B /* Sources */,
+				C4CFD23D2B34767200CD8C0B /* Frameworks */,
+				C4CFD23E2B34767200CD8C0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = homewidget02Extension;
+			productName = homewidget02Extension;
+			productReference = C4CFD2402B34767200CD8C0B /* homewidget02Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,6 +674,12 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = C47179572B34307E0039D376;
 					};
+					C4A6E9B42B35CFB0001545DA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					C4CFD23F2B34767200CD8C0B = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = C47179532B34307E0039D376 /* Build configuration list for PBXProject "skkumap" */;
@@ -215,6 +691,10 @@
 				Base,
 			);
 			mainGroup = C471794F2B34307E0039D376;
+			packageReferences = (
+				C4DDAABD2B373D3D008A8C39 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C4BDF23F2B45311C00733458 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = C47179592B34307E0039D376 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +702,8 @@
 				C47179572B34307E0039D376 /* skkumap */,
 				C47179672B34307F0039D376 /* skkumapTests */,
 				C47179712B34307F0039D376 /* skkumapUITests */,
+				C4CFD23F2B34767200CD8C0B /* homewidget02Extension */,
+				C4A6E9B42B35CFB0001545DA /* BusArrivalExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +713,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47179932B3433510039D376 /* Launch Screen.storyboard in Resources */,
+				C4DDAABC2B373CBF008A8C39 /* GoogleService-Info.plist in Resources */,
 				C47179632B34307F0039D376 /* Preview Assets.xcassets in Resources */,
+				C4BDF2452B4531B500733458 /* refresh_white.json in Resources */,
 				C47179602B34307F0039D376 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,15 +735,166 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4A6E9B32B35CFB0001545DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A6E9C02B35CFB1001545DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4CFD23E2B34767200CD8C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4CFD24B2B34767300CD8C0B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		448206FBEDF5557E52609ED2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-skkumap-skkumapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7963A18B168A92C5B759041C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-skkumap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D1CB549F53C420BA00ADD4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-skkumap/Pods-skkumap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-skkumap/Pods-skkumap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-skkumap/Pods-skkumap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2EDEF13F7EF049BDDE7B877 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-skkumapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E02170BE591770216C4683 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-skkumap-skkumapUITests/Pods-skkumap-skkumapUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-skkumap-skkumapUITests/Pods-skkumap-skkumapUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-skkumap-skkumapUITests/Pods-skkumap-skkumapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C47179542B34307E0039D376 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C5C3462B419A9C00B588C8 /* TopSafeAreaColorView.swift in Sources */,
+				C4BDF23E2B45155000733458 /* LicensePlate.swift in Sources */,
+				C4C5C3312B40659800B588C8 /* Jongro07BusMainView.swift in Sources */,
+				C471798A2B3432620039D376 /* HomeView.swift in Sources */,
+				C476096E2BF3B09400FE17EB /* NetworkMonitor.swift in Sources */,
+				C4C5C33C2B4181B800B588C8 /* BusAnimation.swift in Sources */,
+				C47179912B3432B40039D376 /* MapView.swift in Sources */,
+				C4BDF23A2B4410D700733458 /* TopInfo.swift in Sources */,
+				C43067D72B458D25008BF4D4 /* Jongro07BusModel.swift in Sources */,
+				C4D49D332B36A7B3003D19C6 /* Map.swift in Sources */,
+				C4636C6A2B45596100CA68D5 /* BusType.swift in Sources */,
+				C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */,
+				C4BDF22D2B43FE3900733458 /* SubwayCircleIcon.swift in Sources */,
+				C4C5C3442B419A6300B588C8 /* BottomAdView.swift in Sources */,
+				C476096B2BF3AEDF00FE17EB /* Webview_buildingModel.swift in Sources */,
+				C4C5C33A2B411C4500B588C8 /* Jongro07BusMainVM.swift in Sources */,
+				C4A6E9CB2B35D7A4001545DA /* BusArrivalLiveActivity.swift in Sources */,
+				C4BDF23C2B4410F100733458 /* TopInfoType.swift in Sources */,
+				C471798F2B3432AD0039D376 /* MapViewModel.swift in Sources */,
+				C47609692BF343AD00FE17EB /* Webview_building.swift in Sources */,
+				C4BDF2312B44044E00733458 /* UIScreen+extension.swift in Sources */,
+				C43067DE2B468A28008BF4D4 /* DraggableView.swift in Sources */,
 				C471795E2B34307E0039D376 /* ContentView.swift in Sources */,
+				C47609702BF3BEE400FE17EB /* NetworkAlertBanner.swift in Sources */,
+				C4BDF2352B44062A00733458 /* BusMainNavigationBar.swift in Sources */,
+				C4C5C33E2B41996E00B588C8 /* Jongro07BusList.swift in Sources */,
+				C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */,
+				C4C5C3352B40780900B588C8 /* Color+extension.swift in Sources */,
 				C471795C2B34307E0039D376 /* skkumapApp.swift in Sources */,
+				C4C5C3402B41998500B588C8 /* RefreshButton.swift in Sources */,
+				C4BDF2372B4406BF00733458 /* BusMainBtnType.swift in Sources */,
+				C471798C2B34326C0039D376 /* HomeViewModel.swift in Sources */,
+				C4D49D362B36B7D9003D19C6 /* Constants.swift in Sources */,
+				C4C5C3372B411C1D00B588C8 /* BusListComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +915,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4A6E9B12B35CFB0001545DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A6E9BE2B35CFB0001545DA /* BusArrival.swift in Sources */,
+				C4A6E9BA2B35CFB0001545DA /* BusArrivalBundle.swift in Sources */,
+				C4A6E9BC2B35CFB0001545DA /* BusArrivalLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4CFD23C2B34767200CD8C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4CFD2492B34767200CD8C0B /* homewidget02.swift in Sources */,
+				C4CFD2472B34767200CD8C0B /* homewidget02Bundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +946,16 @@
 			isa = PBXTargetDependency;
 			target = C47179572B34307E0039D376 /* skkumap */;
 			targetProxy = C47179732B34307F0039D376 /* PBXContainerItemProxy */;
+		};
+		C4A6E9C32B35CFB1001545DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4A6E9B42B35CFB0001545DA /* BusArrivalExtension */;
+			targetProxy = C4A6E9C22B35CFB1001545DA /* PBXContainerItemProxy */;
+		};
+		C4CFD24E2B34767300CD8C0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4CFD23F2B34767200CD8C0B /* homewidget02Extension */;
+			targetProxy = C4CFD24D2B34767300CD8C0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -332,7 +997,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,7 +1012,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -395,7 +1060,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -404,7 +1069,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -416,26 +1081,36 @@
 		};
 		C471797D2B34307F0039D376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD878F8634C0D324225C245 /* Pods-skkumap.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = skkumap/skkumap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"skkumap/Preview Content\"";
 				DEVELOPMENT_TEAM = 95HGXTX76L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = skkumap/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "주변 버스 정보, 사용자 위치 표시를 위해 위치 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 버스 정보, 사용자 위치 표시를 위해 위치 권한이 필요합니다.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zoyoong.skkumap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -445,26 +1120,36 @@
 		};
 		C471797E2B34307F0039D376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A08C2DC0EB52A9B12601353 /* Pods-skkumap.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = skkumap/skkumap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"skkumap/Preview Content\"";
 				DEVELOPMENT_TEAM = 95HGXTX76L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = skkumap/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "주변 버스 정보, 사용자 위치 표시를 위해 위치 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "주변 버스 정보, 사용자 위치 표시를 위해 위치 권한이 필요합니다.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zoyoong.skkumap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -474,6 +1159,7 @@
 		};
 		C47179802B34307F0039D376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDFC36140CDF35C089B0EE63 /* Pods-skkumapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +1180,7 @@
 		};
 		C47179812B34307F0039D376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F590F62FABCD9F8A5D4A27 /* Pods-skkumapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +1201,7 @@
 		};
 		C47179832B34307F0039D376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB252B665D2E518E6549F881 /* Pods-skkumap-skkumapUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +1220,7 @@
 		};
 		C47179842B34307F0039D376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A22EC62DC3201CF5A36ED77 /* Pods-skkumap-skkumapUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,6 +1234,122 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = skkumap;
+			};
+			name = Release;
+		};
+		C4A6E9C62B35CFB1001545DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95HGXTX76L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusArrival/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BusArrival;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap.BusArrival;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4A6E9C72B35CFB1001545DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95HGXTX76L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusArrival/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BusArrival;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap.BusArrival;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4CFD2512B34767300CD8C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95HGXTX76L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = homewidget02/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = homewidget02;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap.homewidget02;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4CFD2522B34767300CD8C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95HGXTX76L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = homewidget02/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = homewidget02;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap.homewidget02;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -587,7 +1392,62 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C4A6E9C52B35CFB1001545DA /* Build configuration list for PBXNativeTarget "BusArrivalExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A6E9C62B35CFB1001545DA /* Debug */,
+				C4A6E9C72B35CFB1001545DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4CFD2502B34767300CD8C0B /* Build configuration list for PBXNativeTarget "homewidget02Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4CFD2512B34767300CD8C0B /* Debug */,
+				C4CFD2522B34767300CD8C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4BDF23F2B45311C00733458 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.4;
+			};
+		};
+		C4DDAABD2B373D3D008A8C39 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4BDF2402B45311C00733458 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4BDF23F2B45311C00733458 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		C4DDAABE2B373D86008A8C39 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4DDAABD2B373D3D008A8C39 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C4DDAAC02B373D86008A8C39 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4DDAABD2B373D3D008A8C39 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C47179502B34307E0039D376 /* Project object */;
 }

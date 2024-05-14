@@ -8,11 +8,95 @@
 import SwiftUI
 
 struct BusMainNavigationBar: View {
+    let title: String
+    let backgroundColor: Color
+    let isDisplayLeftBtn: Bool
+    let isDisplayRightBtn: Bool
+    let leftBtnAction: () -> Void
+    let RightBtnAction: () -> Void
+    let RightBtnType: BusMainBtnType
+    
+    init(
+        title: String = "testtitle",
+        backgroundColor: Color = .customDeepGreen1,
+        isDisplayLeftBtn: Bool = true,
+        isDisplayRightBtn: Bool = true,
+        leftBtnAction: @escaping () -> Void = {},
+        RightBtnAction: @escaping () -> Void = {},
+        RightBtnType: BusMainBtnType = .info
+        
+    ) {
+        self.title = title
+        self.backgroundColor = backgroundColor
+        self.isDisplayLeftBtn = isDisplayLeftBtn
+        self.isDisplayRightBtn = isDisplayRightBtn
+        self.leftBtnAction = leftBtnAction
+        self.RightBtnAction = RightBtnAction
+        self.RightBtnType = RightBtnType
+    }
+    
+    
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .center) {
+            Rectangle()
+                .fill(backgroundColor)
+                .frame(width: UIScreen.screenWidth, height: 43)
+            HStack(alignment: .center){
+                
+                
+                if isDisplayLeftBtn {
+                    Image(systemName: "chevron.backward")
+                        .frame(width: 15, height: 15)
+                        .foregroundColor(.white)
+                } else {
+                    Spacer()
+                        .frame(width: 15, height: 15)
+                }
+                
+                
+                Spacer()
+                
+                
+                Text(title)
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(Color.white)
+                
+                
+                Spacer()
+                
+                if isDisplayRightBtn {
+                    switch RightBtnType {
+                    case .close:
+                        Image(systemName: "xmark.circle")
+                            .frame(width: 15, height: 15)
+                            .foregroundColor(.white)
+                    case .info:
+                        Image(systemName: "info.circle")
+                            .frame(width: 15, height: 15)
+                            .foregroundColor(.white)
+                    case .help:
+                        Image(systemName: "questionmark.circle")
+                            .frame(width: 15, height: 15)
+                            .foregroundColor(.white)
+                    }
+                    
+                } else {
+                    Spacer()
+                        .frame(width: 15, height: 15)
+                }
+               
+                
+                
+            }
+            .padding(.horizontal, 15)
+            
+        }
+        .frame(width: UIScreen.screenWidth, height: 43)
     }
 }
 
 #Preview {
-    BusMainNavigationBar()
+    BusMainNavigationBar(title: "test", backgroundColor: .customDeepGreen1, isDisplayLeftBtn: true, isDisplayRightBtn: true, leftBtnAction: {}, RightBtnAction: {}, RightBtnType: .info)
 }

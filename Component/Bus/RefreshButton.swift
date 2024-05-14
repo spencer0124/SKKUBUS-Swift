@@ -10,7 +10,7 @@ import Lottie
 
 struct HSSCRefreshButton: View {
     
-    @StateObject var HSSCBusComponentViewModel = HSSCBusComponentVM()
+    @StateObject var Jongro07BusMainViewModel = Jongro07BusMainVM()
     
     @State private var playbackMode: LottiePlaybackMode = .paused
     @State private var timer = Timer.publish(every: 15, on: .main, in:.common).autoconnect()
@@ -32,10 +32,6 @@ struct HSSCRefreshButton: View {
         }
         .clipShape(Circle())
         .contentShape(Circle())
-        // 얘는 어차피 앱이 켜지면 active 감지 -> 새로고침 하기 때문에 또 실행시켜줄 필요가 없다
-//        .onAppear() {
-//            refreshAction()
-//        }
         .onTapGesture {
             print("onTapGesture clicked")
             userDidTap()
@@ -57,7 +53,7 @@ struct HSSCRefreshButton: View {
         switch busType {
         case .Jonro07Bus:
             print("Jonro07Bus")
-            HSSCBusComponentViewModel.refreshBusStations()
+            Jongro07BusMainViewModel.refreshBusStations()
         case .HSSCBus:
             print("HSSCBus")
             // actual implementation here

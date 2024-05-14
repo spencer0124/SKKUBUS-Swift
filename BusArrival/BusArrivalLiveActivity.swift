@@ -4,7 +4,6 @@
 //
 //  Created by 조승용 on 2023/12/22.
 //
-
 import ActivityKit
 import WidgetKit
 import SwiftUI
@@ -12,69 +11,169 @@ import SwiftUI
 struct BusArrivalAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
-        var emoji: String
+        var value: Int
+        var step: Int
+        var message: String
     }
-
+    
     // Fixed non-changing properties about your activity go here!
-    var name: String
+    var timerName: String
+//    var name: String
 }
 
+@available(iOS 16.2, *)
 struct BusArrivalLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: BusArrivalAttributes.self) { context in
+        ActivityConfiguration(for:BusArrivalAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
-                Text("Hello \(context.state.emoji)")
+                HStack {
+                    HStack {
+                        ZStack {
+                            Circle()
+                                .strokeBorder(Color.blue,lineWidth: 0)
+                                .background(Circle().foregroundColor(.green))
+                                .frame(width: 20, height: 20)
+                            
+                            
+                            Text("마을")
+                                .foregroundColor(.white)
+                                .font(.system(size: 9, weight: .medium))
+                        }
+                        .padding(.leading, 5)
+                        Text("종로07")
+                            .foregroundColor(.white)
+                            .font(.system(size: 14, weight: .medium))
+                    }
+                    Spacer()
+                    Text("혜화역1번출구")
+                        .foregroundColor(.white)
+                        .font(.system(size: 14, weight: .medium))
+                        .padding(.trailing, 5)
+                }
+                
+                context.state.step == 1 ?
+                
+                Text(context.state.message)
+                    .foregroundColor(.white)
+                    .font(.system(size: 22, weight: .bold))
+                    .monospacedDigit()
+                    .multilineTextAlignment(.center)
+                : Text(timerInterval: Date.now...Date().addingTimeInterval(TimeInterval(context.state.value)), countsDown: true)
+                    .foregroundColor(.white)
+                    .font(.system(size: 40, weight: .bold))
+                    .monospacedDigit()
+                    .multilineTextAlignment(.center)
             }
-            .activityBackgroundTint(Color.cyan)
-            .activitySystemActionForegroundColor(Color.black)
-
+            .padding()
+            .activityBackgroundTint(Color.black)
+            .activitySystemActionForegroundColor(Color.white)
+            
         } dynamicIsland: { context in
             DynamicIsland {
+                
                 // Expanded UI goes here.  Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    Text("Leading")
+                    HStack {
+                        ZStack {
+                            Circle()
+                                .strokeBorder(Color.blue,lineWidth: 0)
+                                .background(Circle().foregroundColor(.green))
+                                .frame(width: 20, height: 20)
+                            
+                            
+                            Text("마을")
+                                .font(.system(size: 9, weight: .medium))
+                        }
+                        .padding(.leading, 5)
+                        Text("종로07")
+                            .font(.system(size: 14, weight: .medium))
+                    }
+                    
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    Text("Trailing")
+                    Text("혜화역1번출구")
+                        .font(.system(size: 14, weight: .medium))
+                        .padding(.trailing, 5)
                 }
+                DynamicIslandExpandedRegion(.center) {
+                    
+                }
+//                DynamicIslandExpandedRegion(.bottom) {
+//                    VStack(alignment:.center) {
+//                        Spacer()
+//                        
+//                       
+//                        Text(context.state.endTime, style: .timer)
+//                                .font(.system(size: 40, weight: .bold))
+//                                .monospacedDigit()
+//                                .multilineTextAlignment(.center)
+//                        
+//                        Spacer()
+//                        }
+//                }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.emoji)")
-                    // more content
+                    VStack(alignment: .center) {
+                        Spacer()
+                        context.state.step == 1 ?
+                        Text(context.state.message)
+                            .font(.system(size: 30, weight: .bold))
+                            .monospacedDigit()
+                            .multilineTextAlignment(.center)
+                        : Text(timerInterval: Date.now...Date().addingTimeInterval(TimeInterval(context.state.value)), countsDown: true)
+                            .font(.system(size: 40, weight: .bold))
+                            .monospacedDigit()
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                    }
                 }
+
+
+
+
             } compactLeading: {
-                Text("L")
+                HStack() {
+                    ZStack {
+                        Circle()
+                            .strokeBorder(Color.blue,lineWidth: 0)
+                            .background(Circle().foregroundColor(Color.green))
+                            .frame(width: 20, height: 20)
+                        Text("마을")
+                            .font(.system(size: 9, weight: .bold))
+                    }
+                    Text("혜화역1번출구")
+                        .font(.system(size: 14, weight: .bold))
+                        .padding(.leading, 2)
+                }
             } compactTrailing: {
-                Text("T \(context.state.emoji)")
+               
+
+                Text(timerInterval: Date.now...Date().addingTimeInterval(TimeInterval(context.state.value)), countsDown: true)
+                        .multilineTextAlignment(.trailing)
+                        .monospacedDigit()
             } minimal: {
-                Text(context.state.emoji)
+                Text(timerInterval: Date.now...Date().addingTimeInterval(TimeInterval(context.state.value)), countsDown: true)
+//                    .monospacedDigit()
             }
             .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(Color.red)
+            .keylineTint(.customDeepGreen1)
         }
     }
 }
 
-extension BusArrivalAttributes {
-    fileprivate static var preview: BusArrivalAttributes {
-        BusArrivalAttributes(name: "World")
-    }
-}
 
-extension BusArrivalAttributes.ContentState {
-    fileprivate static var smiley: BusArrivalAttributes.ContentState {
-        BusArrivalAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: BusArrivalAttributes.ContentState {
-         BusArrivalAttributes.ContentState(emoji: "🤩")
-     }
-}
 
-#Preview("Notification", as: .content, using: BusArrivalAttributes.preview) {
-   BusArrivalLiveActivity()
+
+
+@available(iOS 17.0, *)
+//#Preview("Notification", as: .dynamicIsland(.expanded), using: BusArrivalAttributes(timerName: "testtimername")) {
+#Preview("Notification", as: .content,  using: BusArrivalAttributes(timerName: "testtimername")) {
+    
+    
+    BusArrivalLiveActivity()
 } contentStates: {
-    BusArrivalAttributes.ContentState.smiley
-    BusArrivalAttributes.ContentState.starEyes
+    BusArrivalAttributes.ContentState(value: 120, step: 0, message: "운행종료")
 }
+

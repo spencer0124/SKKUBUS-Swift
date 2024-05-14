@@ -1,5 +1,5 @@
 //
-//  HSSCBusMainView.swift
+//  Jongro07BusMainView.swift
 //  skkumap
 //
 //  Created by 조승용 on 2023/12/30.
@@ -8,8 +8,7 @@
 import SwiftUI
 import Lottie
 
-struct HSSCBusMainView: View {
-    @ObservedObject var HSSCBusComponentViewModel = HSSCBusComponentVM()
+struct Jongro07BusMainView: View {
     
     var body: some View {
         
@@ -30,7 +29,7 @@ struct HSSCBusMainView: View {
                 
                 
                 TopInfo(timeFormat: .Format12Hour, busCount: 3, busStatus: .active)
-                HSSCBusListView()
+                Jongro07BusListView()
             }
             
             
@@ -61,5 +60,5 @@ struct HSSCBusMainView: View {
 
 // MARK: - preview
 #Preview {
-    HSSCBusMainView()
+    Jongro07BusMainView()
 }

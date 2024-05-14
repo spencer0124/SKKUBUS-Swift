@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum BusMainBtnType: String {
+    case close
+    case info = "정보"
+    case help = "도움말"
+}
