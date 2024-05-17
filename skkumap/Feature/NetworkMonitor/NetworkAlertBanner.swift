@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NetworkAlertBanner: View {
-    @Binding var isConnected: Bool 
+    @Binding var isConnected: Bool
     @State private var showAlert = false
     
 

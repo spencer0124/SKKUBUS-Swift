@@ -27,9 +27,10 @@
 		C47179912B3432B40039D376 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179902B3432B40039D376 /* MapView.swift */; };
 		C47179932B3433510039D376 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47179922B3433510039D376 /* Launch Screen.storyboard */; };
 		C47609692BF343AD00FE17EB /* Webview_building.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47609682BF343AD00FE17EB /* Webview_building.swift */; };
-		C476096B2BF3AEDF00FE17EB /* Webview_buildingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096A2BF3AEDF00FE17EB /* Webview_buildingModel.swift */; };
+		C476096B2BF3AEDF00FE17EB /* Webview_buildingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096A2BF3AEDF00FE17EB /* Webview_buildingVM.swift */; };
 		C476096E2BF3B09400FE17EB /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096D2BF3B09400FE17EB /* NetworkMonitor.swift */; };
 		C47609702BF3BEE400FE17EB /* NetworkAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */; };
+		C482D8E22BF6DEC6000FB13B /* Webview_bulidingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */; };
 		C4A6E9B62B35CFB0001545DA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2412B34767200CD8C0B /* WidgetKit.framework */; };
 		C4A6E9B72B35CFB0001545DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2432B34767200CD8C0B /* SwiftUI.framework */; };
 		C4A6E9BA2B35CFB0001545DA /* BusArrivalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */; };
@@ -144,9 +145,10 @@
 		C47179922B3433510039D376 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C47179952B3448500039D376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C47609682BF343AD00FE17EB /* Webview_building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview_building.swift; sourceTree = "<group>"; };
-		C476096A2BF3AEDF00FE17EB /* Webview_buildingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview_buildingModel.swift; sourceTree = "<group>"; };
+		C476096A2BF3AEDF00FE17EB /* Webview_buildingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview_buildingVM.swift; sourceTree = "<group>"; };
 		C476096D2BF3B09400FE17EB /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAlertBanner.swift; sourceTree = "<group>"; };
+		C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview_bulidingModel.swift; sourceTree = "<group>"; };
 		C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusArrivalExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalBundle.swift; sourceTree = "<group>"; };
 		C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalLiveActivity.swift; sourceTree = "<group>"; };
@@ -402,7 +404,8 @@
 			isa = PBXGroup;
 			children = (
 				C47609682BF343AD00FE17EB /* Webview_building.swift */,
-				C476096A2BF3AEDF00FE17EB /* Webview_buildingModel.swift */,
+				C476096A2BF3AEDF00FE17EB /* Webview_buildingVM.swift */,
+				C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */,
 			);
 			path = Webview_building;
 			sourceTree = "<group>";
@@ -875,7 +878,7 @@
 				C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */,
 				C4BDF22D2B43FE3900733458 /* SubwayCircleIcon.swift in Sources */,
 				C4C5C3442B419A6300B588C8 /* BottomAdView.swift in Sources */,
-				C476096B2BF3AEDF00FE17EB /* Webview_buildingModel.swift in Sources */,
+				C476096B2BF3AEDF00FE17EB /* Webview_buildingVM.swift in Sources */,
 				C4C5C33A2B411C4500B588C8 /* Jongro07BusMainVM.swift in Sources */,
 				C4A6E9CB2B35D7A4001545DA /* BusArrivalLiveActivity.swift in Sources */,
 				C4BDF23C2B4410F100733458 /* TopInfoType.swift in Sources */,
@@ -891,6 +894,7 @@
 				C4C5C3352B40780900B588C8 /* Color+extension.swift in Sources */,
 				C471795C2B34307E0039D376 /* skkumapApp.swift in Sources */,
 				C4C5C3402B41998500B588C8 /* RefreshButton.swift in Sources */,
+				C482D8E22BF6DEC6000FB13B /* Webview_bulidingModel.swift in Sources */,
 				C4BDF2372B4406BF00733458 /* BusMainBtnType.swift in Sources */,
 				C471798C2B34326C0039D376 /* HomeViewModel.swift in Sources */,
 				C4D49D362B36B7D9003D19C6 /* Constants.swift in Sources */,
