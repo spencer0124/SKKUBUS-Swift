@@ -13,7 +13,7 @@ struct Jongro07BusMainView: View {
     var body: some View {
         
         ZStack(alignment: .top) {
-            TopSafeAreaColorView()
+            TopSafeAreaColorView(color: .green)
             
             
             VStack(spacing:0) {

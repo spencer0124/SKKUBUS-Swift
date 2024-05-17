@@ -30,8 +30,17 @@ struct Webview_building: View {
 
     var body: some View {
         ZStack {
+            TopSafeAreaColorView(color: .customDeepGreen1)
             VStack {
-                headerView
+                BusMainNavigationBar(
+                    title: "성균관대 건물지도",
+                    backgroundColor: .customDeepGreen1,
+                    isDisplayLeftBtn: true,
+                    isDisplayRightBtn: true,
+                    leftBtnAction:  {},
+                    RightBtnAction: {},
+                    RightBtnType: .info
+                )
                 Spacer().frame(height: 13)
                 optionPicker
                 Spacer().frame(height: 13)
@@ -41,42 +50,7 @@ struct Webview_building: View {
         }
     }
 
-    private var headerView: some View {
-        HStack {
-            backButton
-            Spacer()
-            title
-            Spacer()
-            infoButton
-        }
-        .padding()
-        .background(Color.customDeepGreen1)
-        .frame(height: 45)
-    }
-
-    private var backButton: some View {
-        Button(action: {
-            presentationMode.wrappedValue.dismiss()
-        }) {
-            Image(systemName: "arrow.left")
-                .foregroundColor(.white)
-        }
-    }
-
-    private var title: some View {
-        Text("성균관대 건물지도")
-            .font(.headline)
-            .foregroundColor(.white)
-    }
-
-    private var infoButton: some View {
-        Button(action: {
-            presentationMode.wrappedValue.dismiss()
-        }) {
-            Image(systemName: "info.circle")
-                .foregroundColor(.white)
-        }
-    }
+   
 
     private var optionPicker: some View {
         Picker("Options", selection: $selectedOption) {

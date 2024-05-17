@@ -34,7 +34,8 @@ struct skkumapApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Webview_building()
+                SubLaunchScreen()
+//            Webview_building()
 //            MapView()
 //            Jongro07BusMainView()
         }

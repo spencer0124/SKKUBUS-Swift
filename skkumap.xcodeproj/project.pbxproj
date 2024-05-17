@@ -31,6 +31,7 @@
 		C476096E2BF3B09400FE17EB /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096D2BF3B09400FE17EB /* NetworkMonitor.swift */; };
 		C47609702BF3BEE400FE17EB /* NetworkAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */; };
 		C482D8E22BF6DEC6000FB13B /* Webview_bulidingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */; };
+		C482D8E62BF6EBF9000FB13B /* SubLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482D8E52BF6EBF9000FB13B /* SubLaunchScreen.swift */; };
 		C4A6E9B62B35CFB0001545DA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2412B34767200CD8C0B /* WidgetKit.framework */; };
 		C4A6E9B72B35CFB0001545DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2432B34767200CD8C0B /* SwiftUI.framework */; };
 		C4A6E9BA2B35CFB0001545DA /* BusArrivalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */; };
@@ -149,6 +150,7 @@
 		C476096D2BF3B09400FE17EB /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAlertBanner.swift; sourceTree = "<group>"; };
 		C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview_bulidingModel.swift; sourceTree = "<group>"; };
+		C482D8E52BF6EBF9000FB13B /* SubLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubLaunchScreen.swift; sourceTree = "<group>"; };
 		C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusArrivalExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalBundle.swift; sourceTree = "<group>"; };
 		C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalLiveActivity.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 		C47179862B3432370039D376 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				C482D8E42BF6EBD4000FB13B /* SubLaunchScreen */,
 				C476096C2BF3B08000FE17EB /* NetworkMonitor */,
 				C47179882B34324B0039D376 /* Home */,
 				C47179872B3432420039D376 /* Onboarding */,
@@ -405,7 +408,6 @@
 			children = (
 				C47609682BF343AD00FE17EB /* Webview_building.swift */,
 				C476096A2BF3AEDF00FE17EB /* Webview_buildingVM.swift */,
-				C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */,
 			);
 			path = Webview_building;
 			sourceTree = "<group>";
@@ -417,6 +419,22 @@
 				C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */,
 			);
 			path = NetworkMonitor;
+			sourceTree = "<group>";
+		};
+		C482D8E32BF6E9AD000FB13B /* Webview_building */ = {
+			isa = PBXGroup;
+			children = (
+				C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */,
+			);
+			path = Webview_building;
+			sourceTree = "<group>";
+		};
+		C482D8E42BF6EBD4000FB13B /* SubLaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C482D8E52BF6EBF9000FB13B /* SubLaunchScreen.swift */,
+			);
+			path = SubLaunchScreen;
 			sourceTree = "<group>";
 		};
 		C4A6E9B82B35CFB0001545DA /* BusArrival */ = {
@@ -531,6 +549,7 @@
 		C4D49D302B36A76F003D19C6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C482D8E32BF6E9AD000FB13B /* Webview_building */,
 				C4C5C3382B411C3800B588C8 /* Jongro07Bus */,
 				C4D49D312B36A77A003D19C6 /* Map */,
 			);
@@ -885,6 +904,7 @@
 				C471798F2B3432AD0039D376 /* MapViewModel.swift in Sources */,
 				C47609692BF343AD00FE17EB /* Webview_building.swift in Sources */,
 				C4BDF2312B44044E00733458 /* UIScreen+extension.swift in Sources */,
+				C482D8E62BF6EBF9000FB13B /* SubLaunchScreen.swift in Sources */,
 				C43067DE2B468A28008BF4D4 /* DraggableView.swift in Sources */,
 				C471795E2B34307E0039D376 /* ContentView.swift in Sources */,
 				C47609702BF3BEE400FE17EB /* NetworkAlertBanner.swift in Sources */,

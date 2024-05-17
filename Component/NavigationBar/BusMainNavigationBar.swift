@@ -42,7 +42,7 @@ struct BusMainNavigationBar: View {
         ZStack(alignment: .center) {
             Rectangle()
                 .fill(backgroundColor)
-                .frame(width: UIScreen.screenWidth, height: 43)
+                .frame(width: UIScreen.screenWidth, height: 50)
             HStack(alignment: .center){
                 
                 
@@ -98,5 +98,5 @@ struct BusMainNavigationBar: View {
 }
 
 #Preview {
-    BusMainNavigationBar(title: "test", backgroundColor: .customDeepGreen1, isDisplayLeftBtn: true, isDisplayRightBtn: true, leftBtnAction: {}, RightBtnAction: {}, RightBtnType: .info)
+    BusMainNavigationBar(title: "testtitle", backgroundColor: .customDeepGreen1, isDisplayLeftBtn: true, isDisplayRightBtn: true, leftBtnAction: {}, RightBtnAction: {}, RightBtnType: .info)
 }
