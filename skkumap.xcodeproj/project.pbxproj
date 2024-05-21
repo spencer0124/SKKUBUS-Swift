@@ -12,7 +12,8 @@
 		C43067D72B458D25008BF4D4 /* Jongro07BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D62B458D25008BF4D4 /* Jongro07BusModel.swift */; };
 		C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D92B4594DC008BF4D4 /* HTTPClient.swift */; };
 		C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067DB2B45957B008BF4D4 /* URL+extension.swift */; };
-		C43067DE2B468A28008BF4D4 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067DD2B468A28008BF4D4 /* DraggableView.swift */; };
+		C45F57EE2BF719580025842B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F57ED2BF719580025842B /* CustomNavigationBar.swift */; };
+		C45F57F02BF719EC0025842B /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F57EF2BF719EC0025842B /* DraggableView.swift */; };
 		C4636C6A2B45596100CA68D5 /* BusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4636C692B45596100CA68D5 /* BusType.swift */; };
 		C471795C2B34307E0039D376 /* skkumapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471795B2B34307E0039D376 /* skkumapApp.swift */; };
 		C471795E2B34307E0039D376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471795D2B34307E0039D376 /* ContentView.swift */; };
@@ -32,6 +33,10 @@
 		C47609702BF3BEE400FE17EB /* NetworkAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */; };
 		C482D8E22BF6DEC6000FB13B /* Webview_bulidingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */; };
 		C482D8E62BF6EBF9000FB13B /* SubLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482D8E52BF6EBF9000FB13B /* SubLaunchScreen.swift */; };
+		C498D57E2BF759A300C91FDA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D57D2BF759A300C91FDA /* SearchView.swift */; };
+		C498D5802BF759D800C91FDA /* SearchIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D57F2BF759D800C91FDA /* SearchIcon.swift */; };
+		C498D5822BF75A5F00C91FDA /* BusInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D5812BF75A5F00C91FDA /* BusInfoRow.swift */; };
+		C498D5842BF75AB300C91FDA /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498D5832BF75AB300C91FDA /* NaverMapView.swift */; };
 		C4A6E9B62B35CFB0001545DA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2412B34767200CD8C0B /* WidgetKit.framework */; };
 		C4A6E9B72B35CFB0001545DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2432B34767200CD8C0B /* SwiftUI.framework */; };
 		C4A6E9BA2B35CFB0001545DA /* BusArrivalBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */; };
@@ -127,7 +132,8 @@
 		C43067D62B458D25008BF4D4 /* Jongro07BusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusModel.swift; sourceTree = "<group>"; };
 		C43067D92B4594DC008BF4D4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		C43067DB2B45957B008BF4D4 /* URL+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+extension.swift"; sourceTree = "<group>"; };
-		C43067DD2B468A28008BF4D4 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		C45F57ED2BF719580025842B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		C45F57EF2BF719EC0025842B /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		C4636C692B45596100CA68D5 /* BusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusType.swift; sourceTree = "<group>"; };
 		C47179582B34307E0039D376 /* skkumap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skkumap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C471795B2B34307E0039D376 /* skkumapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skkumapApp.swift; sourceTree = "<group>"; };
@@ -151,6 +157,10 @@
 		C476096F2BF3BEE400FE17EB /* NetworkAlertBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAlertBanner.swift; sourceTree = "<group>"; };
 		C482D8E12BF6DEC6000FB13B /* Webview_bulidingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview_bulidingModel.swift; sourceTree = "<group>"; };
 		C482D8E52BF6EBF9000FB13B /* SubLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubLaunchScreen.swift; sourceTree = "<group>"; };
+		C498D57D2BF759A300C91FDA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		C498D57F2BF759D800C91FDA /* SearchIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchIcon.swift; sourceTree = "<group>"; };
+		C498D5812BF75A5F00C91FDA /* BusInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoRow.swift; sourceTree = "<group>"; };
+		C498D5832BF75AB300C91FDA /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
 		C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BusArrivalExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A6E9B92B35CFB0001545DA /* BusArrivalBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalBundle.swift; sourceTree = "<group>"; };
 		C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusArrivalLiveActivity.swift; sourceTree = "<group>"; };
@@ -273,6 +283,19 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		C45F57EC2BF719480025842B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C45F57ED2BF719580025842B /* CustomNavigationBar.swift */,
+				C45F57EF2BF719EC0025842B /* DraggableView.swift */,
+				C498D57D2BF759A300C91FDA /* SearchView.swift */,
+				C498D57F2BF759D800C91FDA /* SearchIcon.swift */,
+				C498D5812BF75A5F00C91FDA /* BusInfoRow.swift */,
+				C498D5832BF75AB300C91FDA /* NaverMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		C471794F2B34307E0039D376 = {
 			isa = PBXGroup;
 			children = (
@@ -388,7 +411,6 @@
 			children = (
 				C471798E2B3432AC0039D376 /* MapViewModel.swift */,
 				C47179902B3432B40039D376 /* MapView.swift */,
-				C43067DD2B468A28008BF4D4 /* DraggableView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -496,6 +518,7 @@
 		C4C5C3412B419A3B00B588C8 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				C45F57EC2BF719480025842B /* Map */,
 				C4C5C3472B419AD900B588C8 /* Bus */,
 				C4C5C3422B419A4700B588C8 /* NavigationBar */,
 			);
@@ -883,7 +906,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C498D5842BF75AB300C91FDA /* NaverMapView.swift in Sources */,
 				C4C5C3462B419A9C00B588C8 /* TopSafeAreaColorView.swift in Sources */,
+				C498D5822BF75A5F00C91FDA /* BusInfoRow.swift in Sources */,
+				C45F57EE2BF719580025842B /* CustomNavigationBar.swift in Sources */,
 				C4BDF23E2B45155000733458 /* LicensePlate.swift in Sources */,
 				C4C5C3312B40659800B588C8 /* Jongro07BusMainView.swift in Sources */,
 				C471798A2B3432620039D376 /* HomeView.swift in Sources */,
@@ -891,6 +917,7 @@
 				C4C5C33C2B4181B800B588C8 /* BusAnimation.swift in Sources */,
 				C47179912B3432B40039D376 /* MapView.swift in Sources */,
 				C4BDF23A2B4410D700733458 /* TopInfo.swift in Sources */,
+				C498D5802BF759D800C91FDA /* SearchIcon.swift in Sources */,
 				C43067D72B458D25008BF4D4 /* Jongro07BusModel.swift in Sources */,
 				C4D49D332B36A7B3003D19C6 /* Map.swift in Sources */,
 				C4636C6A2B45596100CA68D5 /* BusType.swift in Sources */,
@@ -902,10 +929,10 @@
 				C4A6E9CB2B35D7A4001545DA /* BusArrivalLiveActivity.swift in Sources */,
 				C4BDF23C2B4410F100733458 /* TopInfoType.swift in Sources */,
 				C471798F2B3432AD0039D376 /* MapViewModel.swift in Sources */,
+				C498D57E2BF759A300C91FDA /* SearchView.swift in Sources */,
 				C47609692BF343AD00FE17EB /* Webview_building.swift in Sources */,
 				C4BDF2312B44044E00733458 /* UIScreen+extension.swift in Sources */,
 				C482D8E62BF6EBF9000FB13B /* SubLaunchScreen.swift in Sources */,
-				C43067DE2B468A28008BF4D4 /* DraggableView.swift in Sources */,
 				C471795E2B34307E0039D376 /* ContentView.swift in Sources */,
 				C47609702BF3BEE400FE17EB /* NetworkAlertBanner.swift in Sources */,
 				C4BDF2352B44062A00733458 /* BusMainNavigationBar.swift in Sources */,
@@ -914,6 +941,7 @@
 				C4C5C3352B40780900B588C8 /* Color+extension.swift in Sources */,
 				C471795C2B34307E0039D376 /* skkumapApp.swift in Sources */,
 				C4C5C3402B41998500B588C8 /* RefreshButton.swift in Sources */,
+				C45F57F02BF719EC0025842B /* DraggableView.swift in Sources */,
 				C482D8E22BF6DEC6000FB13B /* Webview_bulidingModel.swift in Sources */,
 				C4BDF2372B4406BF00733458 /* BusMainBtnType.swift in Sources */,
 				C471798C2B34326C0039D376 /* HomeViewModel.swift in Sources */,

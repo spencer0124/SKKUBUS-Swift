@@ -47,9 +47,11 @@ struct BusMainNavigationBar: View {
                 
                 
                 if isDisplayLeftBtn {
-                    Image(systemName: "chevron.backward")
-                        .frame(width: 15, height: 15)
-                        .foregroundColor(.white)
+                    Button(action: leftBtnAction) {
+                        Image(systemName: "chevron.backward")
+                            .frame(width: 15, height: 15)
+                            .foregroundColor(.white)
+                    }
                 } else {
                     Spacer()
                         .frame(width: 15, height: 15)
@@ -67,19 +69,21 @@ struct BusMainNavigationBar: View {
                 Spacer()
                 
                 if isDisplayRightBtn {
-                    switch RightBtnType {
-                    case .close:
-                        Image(systemName: "xmark.circle")
-                            .frame(width: 15, height: 15)
-                            .foregroundColor(.white)
-                    case .info:
-                        Image(systemName: "info.circle")
-                            .frame(width: 15, height: 15)
-                            .foregroundColor(.white)
-                    case .help:
-                        Image(systemName: "questionmark.circle")
-                            .frame(width: 15, height: 15)
-                            .foregroundColor(.white)
+                    Button(action: RightBtnAction) {
+                        switch RightBtnType {
+                        case .close:
+                            Image(systemName: "xmark.circle")
+                                .frame(width: 15, height: 15)
+                                .foregroundColor(.white)
+                        case .info:
+                            Image(systemName: "info.circle")
+                                .frame(width: 15, height: 15)
+                                .foregroundColor(.white)
+                        case .help:
+                            Image(systemName: "questionmark.circle")
+                                .frame(width: 15, height: 15)
+                                .foregroundColor(.white)
+                        }
                     }
                     
                 } else {

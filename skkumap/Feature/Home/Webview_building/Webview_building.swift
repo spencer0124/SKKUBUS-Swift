@@ -21,6 +21,7 @@ struct WebView: UIViewRepresentable {
 
 struct Webview_building: View {
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) private var dismiss
     @State private var selectedOption = "인사캠"
     let options = ["인사캠", "자과캠"]
     @ObservedObject var webViewModel = WebViewModel(initialURL: WebviewBuildingURLs.hssc)
@@ -29,6 +30,7 @@ struct Webview_building: View {
     @StateObject private var networkMonitor = NetworkMonitor()
 
     var body: some View {
+        
         ZStack {
             TopSafeAreaColorView(color: .customDeepGreen1)
             VStack {
@@ -37,7 +39,9 @@ struct Webview_building: View {
                     backgroundColor: .customDeepGreen1,
                     isDisplayLeftBtn: true,
                     isDisplayRightBtn: true,
-                    leftBtnAction:  {},
+                    leftBtnAction:  {
+                        dismiss()
+                    },
                     RightBtnAction: {},
                     RightBtnType: .info
                 )

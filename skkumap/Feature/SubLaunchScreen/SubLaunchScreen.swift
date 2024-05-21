@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-extension Color {
 
+extension Color {
     static let green1 = Color(hex: 0x3de010)
     static let green2 = Color(hex: 0x2d7d6c)
 }
@@ -16,7 +16,11 @@ extension Color {
 struct SubLaunchScreen: View {
     
     @State private var animateGradient: Bool = false
-    @State private var navigateToNextView: Bool = false
+    @State private var toNextView : Bool = false
+    
+    @State var test: String = "hi"
+    
+    
     
     var body: some View {
         NavigationStack {
@@ -50,6 +54,7 @@ struct SubLaunchScreen: View {
                 
                 Spacer()
             }
+            
             .background {
                 ZStack {
                     Color.customDeepGreen1.edgesIgnoringSafeArea(.all)
@@ -74,21 +79,35 @@ struct SubLaunchScreen: View {
                         .offset(y: animateGradient ? 50 : -UIScreen.main.bounds.height * 1.2)
                         .animation(Animation.easeInOut(duration: 1.3), value: animateGradient)
                         .onAppear {
+                            
                             // 이걸로 감싸주지 않으면 Top left에서 애니메이션이 시작한다
                             DispatchQueue.main.async {
                                 animateGradient = true
                             }
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-//                                 1.3s for animation + 0.5s delay
-                                navigateToNextView = true
+                                // 1.3s for animation + 0.5s delay
+                                UIView.setAnimationsEnabled(false)
+                                
+                                
+                                // 페이지 이동 코드 넣기
+                                toNextView = true
+                                
+                                
+                                // 위에서 false 했다가 다시 true로 바꿔주기 (ui 버그 수정)
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                    UIView.setAnimationsEnabled(true)
+                                }
+                                
+                                
                             }
                         }
                 }
             }
+            .navigationDestination(isPresented: $toNextView, destination: {MapView(argument: $test).navigationBarBackButtonHidden(true)})
             
-            .navigationDestination(isPresented: $navigateToNextView) {
-                MapView().navigationBarBackButtonHidden(true)
-            }
+            
+            
+            
         }
     }
 }

@@ -36,19 +36,19 @@ struct HomeView: View {
                 }
                 .tag(2)
             
-            MapView()
-                .tabItem {
-                    Image(systemName: "map")
-                    Text("지도")
-                }
-                .tag(3)
-            
-            Text("설정")
-                .tabItem {
-                    Image(systemName: "gearshape")
-                    Text("설정")
-                }
-                .tag(4)
+//            MapView()
+//                .tabItem {
+//                    Image(systemName: "map")
+//                    Text("지도")
+//                }
+//                .tag(3)
+//            
+//            Text("설정")
+//                .tabItem {
+//                    Image(systemName: "gearshape")
+//                    Text("설정")
+//                }
+//                .tag(4)
         }
     }
 }
