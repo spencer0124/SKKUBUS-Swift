@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		023BE5A52911D38624E32814 /* Pods_skkumap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF3A78AF985683E00DBA27 /* Pods_skkumap.framework */; };
 		9A5AF5C20E815D7BFA934C0E /* Pods_skkumapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05128ED7D5607FB1094C8F7 /* Pods_skkumapTests.framework */; };
-		C43067D72B458D25008BF4D4 /* Jongro07BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D62B458D25008BF4D4 /* Jongro07BusModel.swift */; };
+		C43067D72B458D25008BF4D4 /* MainBusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D62B458D25008BF4D4 /* MainBusModel.swift */; };
 		C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D92B4594DC008BF4D4 /* HTTPClient.swift */; };
 		C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067DB2B45957B008BF4D4 /* URL+extension.swift */; };
 		C45F57EE2BF719580025842B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F57ED2BF719580025842B /* CustomNavigationBar.swift */; };
@@ -54,12 +54,12 @@
 		C4BDF23E2B45155000733458 /* LicensePlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF23D2B45155000733458 /* LicensePlate.swift */; };
 		C4BDF2412B45311C00733458 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C4BDF2402B45311C00733458 /* Lottie */; };
 		C4BDF2452B4531B500733458 /* refresh_white.json in Resources */ = {isa = PBXBuildFile; fileRef = C4BDF2442B4531B500733458 /* refresh_white.json */; };
-		C4C5C3312B40659800B588C8 /* Jongro07BusMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3302B40659800B588C8 /* Jongro07BusMainView.swift */; };
+		C4C5C3312B40659800B588C8 /* MainBusMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3302B40659800B588C8 /* MainBusMainView.swift */; };
 		C4C5C3352B40780900B588C8 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
 		C4C5C3372B411C1D00B588C8 /* BusListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3362B411C1D00B588C8 /* BusListComponent.swift */; };
-		C4C5C33A2B411C4500B588C8 /* Jongro07BusMainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3392B411C4500B588C8 /* Jongro07BusMainVM.swift */; };
+		C4C5C33A2B411C4500B588C8 /* MainBusMainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3392B411C4500B588C8 /* MainBusMainVM.swift */; };
 		C4C5C33C2B4181B800B588C8 /* BusAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C33B2B4181B800B588C8 /* BusAnimation.swift */; };
-		C4C5C33E2B41996E00B588C8 /* Jongro07BusList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C33D2B41996E00B588C8 /* Jongro07BusList.swift */; };
+		C4C5C33E2B41996E00B588C8 /* MainBusList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C33D2B41996E00B588C8 /* MainBusList.swift */; };
 		C4C5C3402B41998500B588C8 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C33F2B41998500B588C8 /* RefreshButton.swift */; };
 		C4C5C3442B419A6300B588C8 /* BottomAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3432B419A6300B588C8 /* BottomAdView.swift */; };
 		C4C5C3462B419A9C00B588C8 /* TopSafeAreaColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3452B419A9C00B588C8 /* TopSafeAreaColorView.swift */; };
@@ -129,7 +129,7 @@
 		58F590F62FABCD9F8A5D4A27 /* Pods-skkumapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumapTests.release.xcconfig"; path = "Target Support Files/Pods-skkumapTests/Pods-skkumapTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A22EC62DC3201CF5A36ED77 /* Pods-skkumap-skkumapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumap-skkumapUITests.release.xcconfig"; path = "Target Support Files/Pods-skkumap-skkumapUITests/Pods-skkumap-skkumapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B7106FC5E569C33E0F07E27F /* Pods_skkumap_skkumapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skkumap_skkumapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C43067D62B458D25008BF4D4 /* Jongro07BusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusModel.swift; sourceTree = "<group>"; };
+		C43067D62B458D25008BF4D4 /* MainBusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBusModel.swift; sourceTree = "<group>"; };
 		C43067D92B4594DC008BF4D4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		C43067DB2B45957B008BF4D4 /* URL+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+extension.swift"; sourceTree = "<group>"; };
 		C45F57ED2BF719580025842B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -175,12 +175,12 @@
 		C4BDF23B2B4410F100733458 /* TopInfoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopInfoType.swift; sourceTree = "<group>"; };
 		C4BDF23D2B45155000733458 /* LicensePlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePlate.swift; sourceTree = "<group>"; };
 		C4BDF2442B4531B500733458 /* refresh_white.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = refresh_white.json; sourceTree = "<group>"; };
-		C4C5C3302B40659800B588C8 /* Jongro07BusMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusMainView.swift; sourceTree = "<group>"; };
+		C4C5C3302B40659800B588C8 /* MainBusMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBusMainView.swift; sourceTree = "<group>"; };
 		C4C5C3342B40780900B588C8 /* Color+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
 		C4C5C3362B411C1D00B588C8 /* BusListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListComponent.swift; sourceTree = "<group>"; };
-		C4C5C3392B411C4500B588C8 /* Jongro07BusMainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusMainVM.swift; sourceTree = "<group>"; };
+		C4C5C3392B411C4500B588C8 /* MainBusMainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBusMainVM.swift; sourceTree = "<group>"; };
 		C4C5C33B2B4181B800B588C8 /* BusAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAnimation.swift; sourceTree = "<group>"; };
-		C4C5C33D2B41996E00B588C8 /* Jongro07BusList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jongro07BusList.swift; sourceTree = "<group>"; };
+		C4C5C33D2B41996E00B588C8 /* MainBusList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBusList.swift; sourceTree = "<group>"; };
 		C4C5C33F2B41998500B588C8 /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		C4C5C3432B419A6300B588C8 /* BottomAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAdView.swift; sourceTree = "<group>"; };
 		C4C5C3452B419A9C00B588C8 /* TopSafeAreaColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSafeAreaColorView.swift; sourceTree = "<group>"; };
@@ -398,7 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				C47609672BF3438100FE17EB /* Webview_building */,
-				C4C5C32F2B40655B00B588C8 /* Jonro07Bus */,
+				C4C5C32F2B40655B00B588C8 /* MainBus */,
 				C471798D2B3432990039D376 /* Map */,
 				C47179892B3432620039D376 /* HomeView.swift */,
 				C471798B2B34326C0039D376 /* HomeViewModel.swift */,
@@ -471,30 +471,30 @@
 			path = BusArrival;
 			sourceTree = "<group>";
 		};
-		C4BDF2292B43FB5D00733458 /* Jongro07BusMainView */ = {
+		C4BDF2292B43FB5D00733458 /* MainBusMainView */ = {
 			isa = PBXGroup;
 			children = (
-				C4C5C3392B411C4500B588C8 /* Jongro07BusMainVM.swift */,
-				C4C5C3302B40659800B588C8 /* Jongro07BusMainView.swift */,
-				C4C5C33D2B41996E00B588C8 /* Jongro07BusList.swift */,
+				C4C5C3392B411C4500B588C8 /* MainBusMainVM.swift */,
+				C4C5C3302B40659800B588C8 /* MainBusMainView.swift */,
+				C4C5C33D2B41996E00B588C8 /* MainBusList.swift */,
 			);
-			path = Jongro07BusMainView;
+			path = MainBusMainView;
 			sourceTree = "<group>";
 		};
-		C4BDF22A2B43FB7100733458 /* Jongro07BusDetailView */ = {
+		C4BDF22A2B43FB7100733458 /* MainBusDetailView */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Jongro07BusDetailView;
+			path = MainBusDetailView;
 			sourceTree = "<group>";
 		};
-		C4C5C32F2B40655B00B588C8 /* Jonro07Bus */ = {
+		C4C5C32F2B40655B00B588C8 /* MainBus */ = {
 			isa = PBXGroup;
 			children = (
-				C4BDF22A2B43FB7100733458 /* Jongro07BusDetailView */,
-				C4BDF2292B43FB5D00733458 /* Jongro07BusMainView */,
+				C4BDF22A2B43FB7100733458 /* MainBusDetailView */,
+				C4BDF2292B43FB5D00733458 /* MainBusMainView */,
 			);
-			path = Jonro07Bus;
+			path = MainBus;
 			sourceTree = "<group>";
 		};
 		C4C5C3322B4077F800B588C8 /* extension */ = {
@@ -507,12 +507,12 @@
 			path = extension;
 			sourceTree = "<group>";
 		};
-		C4C5C3382B411C3800B588C8 /* Jongro07Bus */ = {
+		C4C5C3382B411C3800B588C8 /* MainBus */ = {
 			isa = PBXGroup;
 			children = (
-				C43067D62B458D25008BF4D4 /* Jongro07BusModel.swift */,
+				C43067D62B458D25008BF4D4 /* MainBusModel.swift */,
 			);
-			path = Jongro07Bus;
+			path = MainBus;
 			sourceTree = "<group>";
 		};
 		C4C5C3412B419A3B00B588C8 /* Component */ = {
@@ -573,7 +573,7 @@
 			isa = PBXGroup;
 			children = (
 				C482D8E32BF6E9AD000FB13B /* Webview_building */,
-				C4C5C3382B411C3800B588C8 /* Jongro07Bus */,
+				C4C5C3382B411C3800B588C8 /* MainBus */,
 				C4D49D312B36A77A003D19C6 /* Map */,
 			);
 			path = Home;
@@ -911,21 +911,21 @@
 				C498D5822BF75A5F00C91FDA /* BusInfoRow.swift in Sources */,
 				C45F57EE2BF719580025842B /* CustomNavigationBar.swift in Sources */,
 				C4BDF23E2B45155000733458 /* LicensePlate.swift in Sources */,
-				C4C5C3312B40659800B588C8 /* Jongro07BusMainView.swift in Sources */,
+				C4C5C3312B40659800B588C8 /* MainBusMainView.swift in Sources */,
 				C471798A2B3432620039D376 /* HomeView.swift in Sources */,
 				C476096E2BF3B09400FE17EB /* NetworkMonitor.swift in Sources */,
 				C4C5C33C2B4181B800B588C8 /* BusAnimation.swift in Sources */,
 				C47179912B3432B40039D376 /* MapView.swift in Sources */,
 				C4BDF23A2B4410D700733458 /* TopInfo.swift in Sources */,
 				C498D5802BF759D800C91FDA /* SearchIcon.swift in Sources */,
-				C43067D72B458D25008BF4D4 /* Jongro07BusModel.swift in Sources */,
+				C43067D72B458D25008BF4D4 /* MainBusModel.swift in Sources */,
 				C4D49D332B36A7B3003D19C6 /* Map.swift in Sources */,
 				C4636C6A2B45596100CA68D5 /* BusType.swift in Sources */,
 				C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */,
 				C4BDF22D2B43FE3900733458 /* SubwayCircleIcon.swift in Sources */,
 				C4C5C3442B419A6300B588C8 /* BottomAdView.swift in Sources */,
 				C476096B2BF3AEDF00FE17EB /* Webview_buildingVM.swift in Sources */,
-				C4C5C33A2B411C4500B588C8 /* Jongro07BusMainVM.swift in Sources */,
+				C4C5C33A2B411C4500B588C8 /* MainBusMainVM.swift in Sources */,
 				C4A6E9CB2B35D7A4001545DA /* BusArrivalLiveActivity.swift in Sources */,
 				C4BDF23C2B4410F100733458 /* TopInfoType.swift in Sources */,
 				C471798F2B3432AD0039D376 /* MapViewModel.swift in Sources */,
@@ -936,7 +936,7 @@
 				C471795E2B34307E0039D376 /* ContentView.swift in Sources */,
 				C47609702BF3BEE400FE17EB /* NetworkAlertBanner.swift in Sources */,
 				C4BDF2352B44062A00733458 /* BusMainNavigationBar.swift in Sources */,
-				C4C5C33E2B41996E00B588C8 /* Jongro07BusList.swift in Sources */,
+				C4C5C33E2B41996E00B588C8 /* MainBusList.swift in Sources */,
 				C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */,
 				C4C5C3352B40780900B588C8 /* Color+extension.swift in Sources */,
 				C471795C2B34307E0039D376 /* skkumapApp.swift in Sources */,

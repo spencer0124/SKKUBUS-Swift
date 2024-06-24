@@ -26,7 +26,7 @@ struct SearchIcon: View {
 
     var body: some View {
         
-        NavigationLink(destination: Webview_building()) {
+//        NavigationStack {
             
             
             HStack(spacing: 0) {
@@ -80,7 +80,7 @@ struct SearchIcon: View {
             //                    UIApplication.shared.open(url)
             //                }
             //            }
-        }
+        
         
     }
     

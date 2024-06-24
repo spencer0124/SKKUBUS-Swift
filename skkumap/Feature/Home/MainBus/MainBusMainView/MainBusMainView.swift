@@ -8,28 +8,35 @@
 import SwiftUI
 import Lottie
 
-struct Jongro07BusMainView: View {
+struct MainBusMainView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) private var dismiss
+    
+    var busType: BusType
     
     var body: some View {
         
         ZStack(alignment: .top) {
-            TopSafeAreaColorView(color: .green)
+            TopSafeAreaColorView(color:busType.getBusColor())
             
             
             VStack(spacing:0) {
                 BusMainNavigationBar(
-                    title: "종로 07",
-                    backgroundColor: .green,
+                    title: busType.getBusTitle(),
+                    backgroundColor: busType.getBusColor(),
                     isDisplayLeftBtn: true,
                     isDisplayRightBtn: true,
-                    leftBtnAction:  {},
+                    leftBtnAction:  {
+                        self.presentationMode.wrappedValue.dismiss()
+                    },
                     RightBtnAction: {},
                     RightBtnType: .info
                 )
                 
                 
                 TopInfo(timeFormat: .Format12Hour, busCount: 3, busStatus: .active)
-                Jongro07BusListView()
+                MainBusListView(busType: busType)
             }
             
             
@@ -37,7 +44,7 @@ struct Jongro07BusMainView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    HSSCRefreshButton(busType: .Jonro07Bus)
+                    HSSCRefreshButton(busType: busType)
                 }
                 .padding(.trailing, 20)
                 .padding(.bottom, 10)
@@ -53,12 +60,15 @@ struct Jongro07BusMainView: View {
                     print("active now!")
                 }
     }
-        
+    
     
 }
 
 
+
+
+
 // MARK: - preview
 #Preview {
-    Jongro07BusMainView()
+    MainBusMainView(busType: BusType.HSSCBus)
 }

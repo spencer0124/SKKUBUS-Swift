@@ -17,8 +17,8 @@ struct SubLaunchScreen: View {
     
     @State private var animateGradient: Bool = false
     @State private var toNextView : Bool = false
+    @State private var test : String = "hi"
     
-    @State var test: String = "hi"
     
     
     

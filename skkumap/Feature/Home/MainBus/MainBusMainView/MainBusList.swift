@@ -7,12 +7,18 @@
 
 import SwiftUI
 
-struct Jongro07BusListView: View {
+struct MainBusListView: View {
+    
+    @ObservedObject var MainBusMainViewModel = MainBusMainVM()
+
+    var busType: BusType
+    
+    
+    
     var body: some View
     
     {
-        
-        @ObservedObject var Jongro07BusMainViewModel = Jongro07BusMainVM()
+        var busMainColor = busType.getBusColor()
         
         ScrollViewReader { proxy in
             ScrollView(showsIndicators: false) {
@@ -21,14 +27,15 @@ struct Jongro07BusListView: View {
                         Spacer()
                             .frame(height: 5)
                             .id("ScrollTop")
-                        ForEach(Jongro07BusMainViewModel.stations, id: \.stationId) { station in
-                            HSSCBusListComponentView(
-                                stationName: station.name,
-                                stationNumber: String(station.stationId),
-                                eta: station.StationMessage,
+                        ForEach(getStations(for: busType), id: \.internalStationId) { station in
+                            MainBusListComponentView(
+                                stationName: station.stationName,
+                                externalStationId: String(station.externalStationId),
+                                eta: station.eta,
                                 isFirstStation: station.isFirstStation,
                                 isLastStation: station.isLastStation,
-                                isRotationStation: station.isRotationStation
+                                isRotationStation: station.isRotationStation,
+                                busMainColor: busMainColor
                             )
                         }
                         Spacer()
@@ -72,7 +79,7 @@ struct Jongro07BusListView: View {
                                 .frame(width: BusConstants.BusMainLeftSpace-65)
                             LicensePlate()
                                 .foregroundColor(.green)
-                            HSSCBusAnimation()
+                            MainBusAnimation(busMainColor: busMainColor)
                             Spacer()
                         }
                         Spacer()
@@ -86,7 +93,7 @@ struct Jongro07BusListView: View {
                                 .frame(width: BusConstants.BusMainLeftSpace-65)
                             LicensePlate()
                                 .foregroundColor(.green)
-                            HSSCBusAnimation()
+                            MainBusAnimation(busMainColor: busMainColor)
                             Spacer()
                         }
                         Spacer()
@@ -98,8 +105,19 @@ struct Jongro07BusListView: View {
             }
         }
     }
+    private func getStations(for busType: BusType) -> [MainBusStation] {
+            switch busType {
+            case .HSSCBus:
+                return MainBusMainViewModel.HSSCstations
+                // TOdo: change campusbus
+            case .CampusBus:
+                return MainBusMainViewModel.HSSCstations
+            case .Jongro07Bus:
+                return MainBusMainViewModel.Jongro07stations
+            }
+        }
 }
 
 #Preview {
-    Jongro07BusListView()
+    MainBusListView(busType: BusType.HSSCBus)
 }

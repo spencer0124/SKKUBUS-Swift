@@ -10,7 +10,7 @@ import Lottie
 
 struct HSSCRefreshButton: View {
     
-    @StateObject var Jongro07BusMainViewModel = Jongro07BusMainVM()
+    @StateObject var Jongro07BusMainViewModel = MainBusMainVM()
     
     @State private var playbackMode: LottiePlaybackMode = .paused
     @State private var timer = Timer.publish(every: 15, on: .main, in:.common).autoconnect()
@@ -20,7 +20,7 @@ struct HSSCRefreshButton: View {
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(Color.gray)
+                .foregroundColor(Color(hex: 0xFF9E9E9E))
                 .frame(width: 48, height: 48)
             LottieView(animation: .named("refresh_white"))
                 .playbackMode(playbackMode)
@@ -51,7 +51,7 @@ struct HSSCRefreshButton: View {
         playbackMode = .playing(.fromProgress(0, toProgress: 1, loopMode: .playOnce))
         
         switch busType {
-        case .Jonro07Bus:
+        case .Jongro07Bus:
             print("Jonro07Bus")
             Jongro07BusMainViewModel.refreshBusStations()
         case .HSSCBus:
@@ -74,5 +74,5 @@ struct HSSCRefreshButton: View {
 
 
 #Preview {
-    HSSCRefreshButton(busType: .Jonro07Bus)
+    HSSCRefreshButton(busType: .Jongro07Bus)
 }

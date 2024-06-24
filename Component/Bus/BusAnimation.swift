@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct HSSCBusAnimation: View {
+struct MainBusAnimation: View {
     @State private var isAnimating = false
+    
+    var busMainColor: Color
     
     var body: some View {
             ZStack {
                 Circle()
                     .frame(width: 25, height: 25)
-                    .foregroundColor(.green)
+                    .foregroundColor(busMainColor)
                     .scaleEffect(isAnimating ? 1.75 : 1.0)
                     .opacity(isAnimating ? 0 : 1)
                     // Animation with infinite repeat
@@ -22,7 +24,7 @@ struct HSSCBusAnimation: View {
 
                 Circle()
                     .frame(width: 25, height: 25)
-                    .foregroundColor(.green)
+                    .foregroundColor(busMainColor)
                 
                 Image(systemName: "bus.fill")
                     .resizable()
@@ -37,5 +39,5 @@ struct HSSCBusAnimation: View {
     }
 
 #Preview {
-    HSSCBusAnimation()
+    MainBusAnimation(busMainColor: BusType.HSSCBus.getBusColor())
 }

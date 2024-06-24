@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-struct HSSCBusListComponentView: View {
+struct MainBusListComponentView: View {
     let stationName: String
-    let stationNumber: String
-    let eta: String
+    let externalStationId: String
+    let eta: String?
     let isFirstStation: Bool
     let isLastStation: Bool
     let isRotationStation: Bool
+    let busMainColor: Color
     
     
     var body: some View {
@@ -23,23 +24,23 @@ struct HSSCBusListComponentView: View {
                 // 좌측 도형 UI
                 VStack {
                     Rectangle()
-                        .fill(isFirstStation==true ? Color.white : Color.green)
+                        .fill(isFirstStation==true ? Color.white : busMainColor)
                         .frame(width: 2, height: 26)
                     
                     Group {
                         if isRotationStation {
                             ZStack{
                                 Capsule()
-                                    .strokeBorder(Color.green, lineWidth: 1)
+                                    .strokeBorder(busMainColor, lineWidth: 1)
                                     .background(Color.white)
                                     .frame(width: 40, height: 20)
                                 HStack(spacing: 0) {
                                     Text("회차")
                                         .font(.system(size: 9, weight: .bold))
-                                        .foregroundColor(Color.green)
+                                        .foregroundColor(busMainColor)
                                     Image(systemName: "arrow.uturn.down")
                                         .font(.system(size: 11, weight: .bold))
-                                        .foregroundColor(.green)
+                                        .foregroundColor(busMainColor)
                                         .scaleEffect(x: -1, y: 1)
                                     
                                 }
@@ -49,12 +50,12 @@ struct HSSCBusListComponentView: View {
                         } else {
                             ZStack{
                                 Circle()
-                                    .strokeBorder(Color.green, lineWidth: 1)
+                                    .strokeBorder(busMainColor, lineWidth: 1)
                                     .background(Circle().foregroundColor(Color.white))
                                     .frame(width: 14, height: 14)
                                 Image(systemName: "chevron.down")
                                     .font(.system(size: 8, weight: .medium))
-                                    .foregroundColor(.green)
+                                    .foregroundColor(busMainColor)
                             }
                         }
                     }
@@ -62,7 +63,7 @@ struct HSSCBusListComponentView: View {
                     
                     
                     Rectangle()
-                        .fill(isLastStation==true ? Color.white : Color.green)
+                        .fill(isLastStation==true ? Color.white : busMainColor)
                         .frame(width: 2, height: 26)
                 }.frame(height: 66)
                 
@@ -79,16 +80,22 @@ struct HSSCBusListComponentView: View {
                     }
                    
                     HStack(spacing: 4.5) {
-                        Text(stationNumber)
+                        Text(externalStationId)
                                 .font(.system(size: 11, weight: .medium))
                                 .foregroundColor(Color.gray)
-                        Text("|")
-                            .font(.system(size: 9, weight: .medium))
-                            .opacity(0.3)
-                            .foregroundColor(Color.gray)
-                        Text(eta)
-                            .font(.system(size: 11, weight: .medium))
-                            .foregroundColor(Color.gray)
+                                .lineLimit(1)
+                                .layoutPriority(1)
+                        if(eta != nil) {
+                            Text("|")
+                                .font(.system(size: 9, weight: .medium))
+                                .opacity(0.3)
+                                .foregroundColor(Color.gray)
+                            Text(eta ?? "")
+                                .font(.system(size: 11, weight: .medium))
+                                .foregroundColor(Color.gray)
+                            
+                        }
+                        
                         
                     }
                 }.frame(height: 66)
@@ -124,5 +131,5 @@ struct HSSCBusListComponentView: View {
 }
 
 #Preview {
-    HSSCBusListComponentView(stationName: "혜화역1번출구", stationNumber: "01504", eta: "1번째 전", isFirstStation: false, isLastStation: false, isRotationStation: false)
+    MainBusListComponentView(stationName: "혜화역1번출구", externalStationId: "01504", eta: "1번째 전", isFirstStation: false, isLastStation: false, isRotationStation: false, busMainColor: BusType.HSSCBus.getBusColor())
 }

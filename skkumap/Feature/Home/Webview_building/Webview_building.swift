@@ -40,7 +40,7 @@ struct Webview_building: View {
                     isDisplayLeftBtn: true,
                     isDisplayRightBtn: true,
                     leftBtnAction:  {
-                        dismiss()
+                        self.presentationMode.wrappedValue.dismiss()
                     },
                     RightBtnAction: {},
                     RightBtnType: .info
