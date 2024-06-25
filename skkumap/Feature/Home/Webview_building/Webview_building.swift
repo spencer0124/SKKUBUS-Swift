@@ -20,6 +20,8 @@ struct WebView: UIViewRepresentable {
 
 
 struct Webview_building: View {
+    @Binding var path: NavigationPath
+    
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.dismiss) private var dismiss
     @State private var selectedOption = "인사캠"
@@ -30,28 +32,27 @@ struct Webview_building: View {
     @StateObject private var networkMonitor = NetworkMonitor()
 
     var body: some View {
-        
-        ZStack {
-            TopSafeAreaColorView(color: .customDeepGreen1)
-            VStack {
-                BusMainNavigationBar(
-                    title: "성균관대 건물지도",
-                    backgroundColor: .customDeepGreen1,
-                    isDisplayLeftBtn: true,
-                    isDisplayRightBtn: true,
-                    leftBtnAction:  {
-                        self.presentationMode.wrappedValue.dismiss()
-                    },
-                    RightBtnAction: {},
-                    RightBtnType: .info
-                )
-                Spacer().frame(height: 13)
-                optionPicker
-                Spacer().frame(height: 13)
-                webView
+            ZStack {
+                TopSafeAreaColorView(color: .customDeepGreen1)
+                VStack {
+                    BusMainNavigationBar(
+                        title: "성균관대 건물지도",
+                        backgroundColor: .customDeepGreen1,
+                        isDisplayLeftBtn: true,
+                        isDisplayRightBtn: true,
+                        leftBtnAction:  {
+                            path.removeLast()
+                        },
+                        RightBtnAction: {},
+                        RightBtnType: .info
+                    )
+                    Spacer().frame(height: 13)
+                    optionPicker
+                    Spacer().frame(height: 13)
+                    webView
+                }
+                NetworkAlertBanner(isConnected: $networkMonitor.isConnected)
             }
-            NetworkAlertBanner(isConnected: $networkMonitor.isConnected)
-        }
     }
 
    
@@ -77,5 +78,5 @@ struct Webview_building: View {
 }
 
 #Preview {
-    Webview_building()
+    Webview_building(path: .constant(NavigationPath()))
 }

@@ -41,40 +41,56 @@ struct SimpleEntry: TimelineEntry {
 
 struct homewidget02EntryView : View {
     var entry: Provider.Entry
+    
+    @Environment(\.widgetFamily) var family
 
     var body: some View {
+        switch family {
+        case .systemSmall:
+            ZStack {
+                ContainerRelativeShape()
+                    .fill(LinearGradient(gradient: Gradient(colors: [.customDeepGreen2, .customDeepGreen3, .customDeepGreen4]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    
+                
+                VStack {
+                    HStack{
+                        Image("skkulogo1")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 60, height: 60)
+                        Spacer()
+                    }
+                    Spacer()
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("스꾸버스")
+                                .font(.system(size: 14, weight: .medium))
+                                .foregroundColor(.white)
+//                            Text("인사캠 셔틀버스")
+//                                .font(.system(size: 14, weight: .medium))
+//                                .foregroundColor(.white)
+                        }.padding(8)
+                        
+                        
+                        Spacer()
+                    }
+                        
+                    
+                }.padding(10)
+            }
         
-        ZStack {
-            ContainerRelativeShape()
-                .fill(LinearGradient(gradient: Gradient(colors: [.customDeepGreen2, .customDeepGreen3, .customDeepGreen4]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                
-            
-            VStack {
-                HStack{
-                    Image("skkulogo1")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 60, height: 60)
-                    Spacer()
-                }
-                Spacer()
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("스꾸라이프")
-                            .font(.system(size: 14, weight: .medium))
-                            .foregroundColor(.white)
-                        Text("인사캠 셔틀버스")
-                            .font(.system(size: 14, weight: .medium))
-                            .foregroundColor(.white)
-                    }.padding(8)
-                    
-                    
-                    Spacer()
-                }
-                    
-                
-            }.padding(10)
+        
+        case .accessoryCircular:
+            Image("skkulogo1")
+                .resizable()
+                .scaledToFit()
+       
+        @unknown default:
+            Image("skkulogo1")
+                .resizable()
+                .scaledToFit()
         }
+        
     }
        
 }
@@ -94,14 +110,20 @@ struct homewidget02: Widget {
             }
         }
         .contentMarginsDisabled()
-        .configurationDisplayName("스꾸버스")
-        .description("인사캠 셔틀버스 바로가기")
+        .configurationDisplayName("스꾸버스 바로가기")
+        .description("위젯으로 스꾸버스를 빠르게 실행하세요!")
+        .supportedFamilies([.accessoryCircular, .systemSmall])
     }
 }
+//
 
+
+@available(iOS 17.0, *)
 #Preview(as: .systemSmall) {
     homewidget02()
 } timeline: {
     SimpleEntry(date: .now, emoji: "😀")
     SimpleEntry(date: .now, emoji: "🤩")
 }
+
+

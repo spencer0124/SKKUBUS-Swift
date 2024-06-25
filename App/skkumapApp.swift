@@ -32,12 +32,35 @@ struct skkumapApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @State var movedeeplinktext: String = ""
+    @State private var test : String = "hi"
+    
     var body: some Scene {
         WindowGroup {
-                SubLaunchScreen()
+//                SubLaunchScreen()
+                MapView(argument: $test)
+                .environment(\.deepLinkText, movedeeplinktext)
+                .onOpenURL(perform: { url in
+
+                    movedeeplinktext = url.absoluteString.removingPercentEncoding ?? ""
+                    
+                       
+                    
+                })
 //            Webview_building()
 //            MapView()
 //            Jongro07BusMainView()
         }
     }
+}
+
+struct DeepLinkEnv: EnvironmentKey {
+  static let defaultValue = ""
+}
+
+extension EnvironmentValues {
+  var deepLinkText: String {
+    get { self[DeepLinkEnv.self] }
+    set { self[DeepLinkEnv.self] = newValue }
+  }
 }

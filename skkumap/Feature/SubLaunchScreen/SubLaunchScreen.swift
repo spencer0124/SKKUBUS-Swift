@@ -22,8 +22,10 @@ struct SubLaunchScreen: View {
     
     
     
+    
+    
     var body: some View {
-        NavigationStack {
+        
             VStack {
                 Spacer()
                 HStack {
@@ -103,12 +105,12 @@ struct SubLaunchScreen: View {
                         }
                 }
             }
-            .navigationDestination(isPresented: $toNextView, destination: {MapView(argument: $test).navigationBarBackButtonHidden(true)})
+            .navigationDestination(isPresented: $toNextView, destination: {MapView(argument: $test ).navigationBarBackButtonHidden(true)})
             
             
             
             
-        }
+        
     }
 }
 

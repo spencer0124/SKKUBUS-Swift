@@ -25,10 +25,6 @@ struct SearchIcon: View {
     }
 
     var body: some View {
-        
-//        NavigationStack {
-            
-            
             HStack(spacing: 0) {
                 if showBorder {
                     imageElement
@@ -70,16 +66,7 @@ struct SearchIcon: View {
                         .frame(width: geometry.size.width, height: geometry.size.height)
                 }
             )
-            //            .onTapGesture {
-            //                        // When the icon is tapped, set the path value
-            //                        path = [pathValue]
-            //                
-            //                    }
-            //            .onTapGesture {
-            //                if let url = url {
-            //                    UIApplication.shared.open(url)
-            //                }
-            //            }
+           
         
         
     }

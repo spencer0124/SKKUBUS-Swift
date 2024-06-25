@@ -69,11 +69,19 @@
 		C4CFD2492B34767200CD8C0B /* homewidget02.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFD2482B34767200CD8C0B /* homewidget02.swift */; };
 		C4CFD24B2B34767300CD8C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CFD24A2B34767300CD8C0B /* Assets.xcassets */; };
 		C4CFD24F2B34767300CD8C0B /* homewidget02Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4CFD2402B34767200CD8C0B /* homewidget02Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4D2EBC32C29AD53002BE3C6 /* CampusBusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D2EBC22C29AD53002BE3C6 /* CampusBusView.swift */; };
 		C4D49D332B36A7B3003D19C6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D49D322B36A7B3003D19C6 /* Map.swift */; };
 		C4D49D362B36B7D9003D19C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D49D352B36B7D9003D19C6 /* Constants.swift */; };
 		C4DDAABC2B373CBF008A8C39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4DDAABB2B373CBF008A8C39 /* GoogleService-Info.plist */; };
 		C4DDAABF2B373D86008A8C39 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C4DDAABE2B373D86008A8C39 /* FirebaseFirestore */; };
 		C4DDAAC12B373D86008A8C39 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C4DDAAC02B373D86008A8C39 /* FirebaseFirestoreSwift */; };
+		C4ED9ADF2C29545E003831F8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2412B34767200CD8C0B /* WidgetKit.framework */; };
+		C4ED9AE02C29545E003831F8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CFD2432B34767200CD8C0B /* SwiftUI.framework */; };
+		C4ED9AE32C29545E003831F8 /* homeInjaWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ED9AE22C29545E003831F8 /* homeInjaWidgetBundle.swift */; };
+		C4ED9AE52C29545E003831F8 /* homeInjaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ED9AE42C29545E003831F8 /* homeInjaWidget.swift */; };
+		C4ED9AE72C29545E003831F8 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ED9AE62C29545E003831F8 /* AppIntent.swift */; };
+		C4ED9AE92C29545F003831F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4ED9AE82C29545F003831F8 /* Assets.xcassets */; };
+		C4ED9AED2C29545F003831F8 /* homeInjaWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4ED9ADE2C29545E003831F8 /* homeInjaWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E6BC24EEAA42BB21A88B007A /* Pods_skkumap_skkumapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7106FC5E569C33E0F07E27F /* Pods_skkumap_skkumapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +114,13 @@
 			remoteGlobalIDString = C4CFD23F2B34767200CD8C0B;
 			remoteInfo = homewidget02Extension;
 		};
+		C4ED9AEB2C29545F003831F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C47179502B34307E0039D376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4ED9ADD2C29545E003831F8;
+			remoteInfo = homeInjaWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,6 +130,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				C4ED9AED2C29545F003831F8 /* homeInjaWidgetExtension.appex in Embed Foundation Extensions */,
 				C4CFD24F2B34767300CD8C0B /* homewidget02Extension.appex in Embed Foundation Extensions */,
 				C4A6E9C42B35CFB1001545DA /* BusArrivalExtension.appex in Embed Foundation Extensions */,
 			);
@@ -192,9 +208,16 @@
 		C4CFD2482B34767200CD8C0B /* homewidget02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homewidget02.swift; sourceTree = "<group>"; };
 		C4CFD24A2B34767300CD8C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4CFD24C2B34767300CD8C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D2EBC22C29AD53002BE3C6 /* CampusBusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusBusView.swift; sourceTree = "<group>"; };
 		C4D49D322B36A7B3003D19C6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		C4D49D352B36B7D9003D19C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C4DDAABB2B373CBF008A8C39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4ED9ADE2C29545E003831F8 /* homeInjaWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = homeInjaWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4ED9AE22C29545E003831F8 /* homeInjaWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeInjaWidgetBundle.swift; sourceTree = "<group>"; };
+		C4ED9AE42C29545E003831F8 /* homeInjaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeInjaWidget.swift; sourceTree = "<group>"; };
+		C4ED9AE62C29545E003831F8 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		C4ED9AE82C29545F003831F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4ED9AEA2C29545F003831F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDFC36140CDF35C089B0EE63 /* Pods-skkumapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumapTests.debug.xcconfig"; path = "Target Support Files/Pods-skkumapTests/Pods-skkumapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E05128ED7D5607FB1094C8F7 /* Pods_skkumapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skkumapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BF3A78AF985683E00DBA27 /* Pods_skkumap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skkumap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +267,15 @@
 			files = (
 				C4CFD2442B34767200CD8C0B /* SwiftUI.framework in Frameworks */,
 				C4CFD2422B34767200CD8C0B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4ED9ADB2C29545E003831F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4ED9AE02C29545E003831F8 /* SwiftUI.framework in Frameworks */,
+				C4ED9ADF2C29545E003831F8 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +340,7 @@
 				C471795A2B34307E0039D376 /* skkumap */,
 				C471796B2B34307F0039D376 /* skkumapTests */,
 				C47179752B34307F0039D376 /* skkumapUITests */,
+				C4ED9AE12C29545E003831F8 /* homeInjaWidget */,
 				C4CFD2452B34767200CD8C0B /* homewidget02 */,
 				C4A6E9B82B35CFB0001545DA /* BusArrival */,
 				C47179592B34307E0039D376 /* Products */,
@@ -324,6 +357,7 @@
 				C47179722B34307F0039D376 /* skkumapUITests.xctest */,
 				C4CFD2402B34767200CD8C0B /* homewidget02Extension.appex */,
 				C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */,
+				C4ED9ADE2C29545E003831F8 /* homeInjaWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,6 +431,7 @@
 		C47179882B34324B0039D376 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C4D2EBC12C29AD3B002BE3C6 /* CampusBus */,
 				C47609672BF3438100FE17EB /* Webview_building */,
 				C4C5C32F2B40655B00B588C8 /* MainBus */,
 				C471798D2B3432990039D376 /* Map */,
@@ -562,6 +597,14 @@
 			path = homewidget02;
 			sourceTree = "<group>";
 		};
+		C4D2EBC12C29AD3B002BE3C6 /* CampusBus */ = {
+			isa = PBXGroup;
+			children = (
+				C4D2EBC22C29AD53002BE3C6 /* CampusBusView.swift */,
+			);
+			path = CampusBus;
+			sourceTree = "<group>";
+		};
 		C4D49D2F2B36A763003D19C6 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,6 +638,18 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C4ED9AE12C29545E003831F8 /* homeInjaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C4ED9AE82C29545F003831F8 /* Assets.xcassets */,
+				C4ED9AEA2C29545F003831F8 /* Info.plist */,
+				C4ED9AE22C29545E003831F8 /* homeInjaWidgetBundle.swift */,
+				C4ED9AE42C29545E003831F8 /* homeInjaWidget.swift */,
+				C4ED9AE62C29545E003831F8 /* AppIntent.swift */,
+			);
+			path = homeInjaWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -614,6 +669,7 @@
 			dependencies = (
 				C4CFD24E2B34767300CD8C0B /* PBXTargetDependency */,
 				C4A6E9C32B35CFB1001545DA /* PBXTargetDependency */,
+				C4ED9AEC2C29545F003831F8 /* PBXTargetDependency */,
 			);
 			name = skkumap;
 			packageProductDependencies = (
@@ -698,6 +754,23 @@
 			productReference = C4CFD2402B34767200CD8C0B /* homewidget02Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		C4ED9ADD2C29545E003831F8 /* homeInjaWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4ED9AEE2C29545F003831F8 /* Build configuration list for PBXNativeTarget "homeInjaWidgetExtension" */;
+			buildPhases = (
+				C4ED9ADA2C29545E003831F8 /* Sources */,
+				C4ED9ADB2C29545E003831F8 /* Frameworks */,
+				C4ED9ADC2C29545E003831F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = homeInjaWidgetExtension;
+			productName = homeInjaWidgetExtension;
+			productReference = C4ED9ADE2C29545E003831F8 /* homeInjaWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -725,6 +798,9 @@
 					C4CFD23F2B34767200CD8C0B = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
+					C4ED9ADD2C29545E003831F8 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = C47179532B34307E0039D376 /* Build configuration list for PBXProject "skkumap" */;
@@ -749,6 +825,7 @@
 				C47179712B34307F0039D376 /* skkumapUITests */,
 				C4CFD23F2B34767200CD8C0B /* homewidget02Extension */,
 				C4A6E9B42B35CFB0001545DA /* BusArrivalExtension */,
+				C4ED9ADD2C29545E003831F8 /* homeInjaWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -793,6 +870,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4CFD24B2B34767300CD8C0B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4ED9ADC2C29545E003831F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4ED9AE92C29545F003831F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,6 +993,7 @@
 			files = (
 				C498D5842BF75AB300C91FDA /* NaverMapView.swift in Sources */,
 				C4C5C3462B419A9C00B588C8 /* TopSafeAreaColorView.swift in Sources */,
+				C4D2EBC32C29AD53002BE3C6 /* CampusBusView.swift in Sources */,
 				C498D5822BF75A5F00C91FDA /* BusInfoRow.swift in Sources */,
 				C45F57EE2BF719580025842B /* CustomNavigationBar.swift in Sources */,
 				C4BDF23E2B45155000733458 /* LicensePlate.swift in Sources */,
@@ -986,6 +1072,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4ED9ADA2C29545E003831F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4ED9AE52C29545E003831F8 /* homeInjaWidget.swift in Sources */,
+				C4ED9AE32C29545E003831F8 /* homeInjaWidgetBundle.swift in Sources */,
+				C4ED9AE72C29545E003831F8 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1008,6 +1104,11 @@
 			isa = PBXTargetDependency;
 			target = C4CFD23F2B34767200CD8C0B /* homewidget02Extension */;
 			targetProxy = C4CFD24D2B34767300CD8C0B /* PBXContainerItemProxy */;
+		};
+		C4ED9AEC2C29545F003831F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4ED9ADD2C29545E003831F8 /* homeInjaWidgetExtension */;
+			targetProxy = C4ED9AEB2C29545F003831F8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1405,6 +1506,64 @@
 			};
 			name = Release;
 		};
+		C4ED9AEF2C29545F003831F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95HGXTX76L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = homeInjaWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = homeInjaWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap.homeInjaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4ED9AF02C29545F003831F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95HGXTX76L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = homeInjaWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = homeInjaWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap.homeInjaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1458,6 +1617,15 @@
 			buildConfigurations = (
 				C4CFD2512B34767300CD8C0B /* Debug */,
 				C4CFD2522B34767300CD8C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4ED9AEE2C29545F003831F8 /* Build configuration list for PBXNativeTarget "homeInjaWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4ED9AEF2C29545F003831F8 /* Debug */,
+				C4ED9AF02C29545F003831F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

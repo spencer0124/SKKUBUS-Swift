@@ -72,6 +72,7 @@ struct BusArrival: Widget {
     }
 }
 
+@available(iOS 17.0, *)
 #Preview(as: .systemSmall) {
     BusArrival()
 } timeline: {
