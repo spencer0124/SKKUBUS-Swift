@@ -74,12 +74,15 @@ struct SubLaunchScreen: View {
                         .animation(Animation.easeInOut(duration: 1.3), value: animateGradient)
                         .onAppear {
                             
+                           
+                            
                             // 이걸로 감싸주지 않으면 Top left에서 애니메이션이 시작한다
                             DispatchQueue.main.async {
                                 animateGradient = true
                             }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
                                 // 1.3s for animation + 0.5s delay
+                                
                                 UIView.setAnimationsEnabled(false)
                                 
                                 

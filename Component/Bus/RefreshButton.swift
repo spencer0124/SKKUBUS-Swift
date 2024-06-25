@@ -51,7 +51,7 @@ struct HSSCRefreshButton: View {
         playbackMode = .playing(.fromProgress(0, toProgress: 1, loopMode: .playOnce))
         
         switch busType {
-        case .Jongro07Bus:
+        case .Jongro07Bus, .Jongro02Bus, .Jongro08Bus:
             print("Jonro07Bus")
             Jongro07BusMainViewModel.refreshBusStations()
         case .HSSCBus:

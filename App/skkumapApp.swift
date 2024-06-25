@@ -45,7 +45,8 @@ struct skkumapApp: App {
             
             NavigationStack(path: $path) {
                 VStack {
-                    MapView(path: $path)
+                    SubLaunchScreen(path: $path)
+//                    MapView(path: $path)
                 }
                 .navigationDestination(for: NavigationState.self) { route in
                     switch route {
