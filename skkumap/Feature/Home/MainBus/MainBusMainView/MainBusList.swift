@@ -114,6 +114,7 @@ struct MainBusListView: View {
                 return MainBusMainViewModel.HSSCstations
             case .Jongro07Bus, .Jongro02Bus, .Jongro08Bus:
                 return MainBusMainViewModel.Jongro07stations
+            
             }
         }
 }

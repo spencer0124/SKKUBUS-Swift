@@ -70,6 +70,7 @@
 		C4CFD24B2B34767300CD8C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CFD24A2B34767300CD8C0B /* Assets.xcassets */; };
 		C4CFD24F2B34767300CD8C0B /* homewidget02Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4CFD2402B34767200CD8C0B /* homewidget02Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C4D2EBC32C29AD53002BE3C6 /* CampusBusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D2EBC22C29AD53002BE3C6 /* CampusBusView.swift */; };
+		C4D2EBC52C2A9F67002BE3C6 /* Navigation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D2EBC42C2A9F67002BE3C6 /* Navigation+Extension.swift */; };
 		C4D49D332B36A7B3003D19C6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D49D322B36A7B3003D19C6 /* Map.swift */; };
 		C4D49D362B36B7D9003D19C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D49D352B36B7D9003D19C6 /* Constants.swift */; };
 		C4DDAABC2B373CBF008A8C39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4DDAABB2B373CBF008A8C39 /* GoogleService-Info.plist */; };
@@ -209,6 +210,7 @@
 		C4CFD24A2B34767300CD8C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4CFD24C2B34767300CD8C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4D2EBC22C29AD53002BE3C6 /* CampusBusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusBusView.swift; sourceTree = "<group>"; };
+		C4D2EBC42C2A9F67002BE3C6 /* Navigation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation+Extension.swift"; sourceTree = "<group>"; };
 		C4D49D322B36A7B3003D19C6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		C4D49D352B36B7D9003D19C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C4DDAABB2B373CBF008A8C39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -538,6 +540,7 @@
 				C4C5C3342B40780900B588C8 /* Color+extension.swift */,
 				C4BDF2302B44044E00733458 /* UIScreen+extension.swift */,
 				C43067DB2B45957B008BF4D4 /* URL+extension.swift */,
+				C4D2EBC42C2A9F67002BE3C6 /* Navigation+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -1024,6 +1027,7 @@
 				C4BDF2352B44062A00733458 /* BusMainNavigationBar.swift in Sources */,
 				C4C5C33E2B41996E00B588C8 /* MainBusList.swift in Sources */,
 				C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */,
+				C4D2EBC52C2A9F67002BE3C6 /* Navigation+Extension.swift in Sources */,
 				C4C5C3352B40780900B588C8 /* Color+extension.swift in Sources */,
 				C471795C2B34307E0039D376 /* skkumapApp.swift in Sources */,
 				C4C5C3402B41998500B588C8 /* RefreshButton.swift in Sources */,
