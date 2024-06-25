@@ -11,7 +11,9 @@ import SwiftUI
 enum BusType {
     case HSSCBus
     case CampusBus
+    case Jongro02Bus
     case Jongro07Bus
+    case Jongro08Bus
     
     func getBusTitle() -> String {
             switch self {
@@ -19,9 +21,14 @@ enum BusType {
                 return "인사캠 셔틀"
             case .CampusBus:
                 return "인자 셔틀"
+            case .Jongro02Bus:
+                return "종로 02"
             case .Jongro07Bus:
                 return "종로 07"
+            case .Jongro08Bus:
+                return "종로 08"
             }
+    
         }
         
         func getBusColor() -> Color {
@@ -30,7 +37,7 @@ enum BusType {
                 return Color(hex: 0xFF003626)
             case .CampusBus:
                 return Color(hex: 0xFF003626)
-            case .Jongro07Bus:
+            case .Jongro02Bus, .Jongro07Bus, .Jongro08Bus:
                 return Color(hex: 0xFF53b332)
             }
         }

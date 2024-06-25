@@ -86,7 +86,7 @@ struct SearchIcon: View {
         }
     }
 }
-//
-//#Preview {
-//    SearchIcon(showBorder: true, showArrow: true, imageName: "subway", imageType: .photo, iconColor: .black, text: "건물지도", url: URL(string: "https://www.example.com"), path: $path, pathValue: 32)
-//}
+
+#Preview {
+    SearchIcon(showBorder: true, showArrow: true, imageName: "subway", imageType: .photo, iconColor: .black, text: "건물지도", url: URL(string: "https://www.example.com"))
+}

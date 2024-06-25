@@ -32,6 +32,8 @@ struct Webview_building: View {
     @StateObject private var networkMonitor = NetworkMonitor()
 
     var body: some View {
+        
+//        NavigationStack {
             ZStack {
                 TopSafeAreaColorView(color: .customDeepGreen1)
                 VStack {
@@ -53,6 +55,8 @@ struct Webview_building: View {
                 }
                 NetworkAlertBanner(isConnected: $networkMonitor.isConnected)
             }
+//        }
+           
     }
 
    

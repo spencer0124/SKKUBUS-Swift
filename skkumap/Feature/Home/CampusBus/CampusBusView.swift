@@ -8,12 +8,35 @@
 import SwiftUI
 
 struct CampusBusView: View {
+    @Binding var path: NavigationPath
+    
     var body: some View {
         
-        Text("Hello, World! campus bus")
+        Link(destination: URL(string: "skkubus://campusbus/main")!) {
+            BusMainNavigationBar(
+                title: "인자셔틀",
+                backgroundColor: .customDeepGreen1,
+                isDisplayLeftBtn: true,
+                isDisplayRightBtn: true,
+                leftBtnAction:  {
+                    path.removeLast()
+                },
+                RightBtnAction: {},
+                RightBtnType: .info
+            )
+            Text("Hello, World! campus bus")
+                }
+        
+      
+        
+        
+        
+        
     }
 }
 
 #Preview {
-    CampusBusView()
+    CampusBusView(
+        path: .constant(NavigationPath())
+    )
 }

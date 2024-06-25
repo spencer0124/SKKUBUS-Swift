@@ -27,40 +27,43 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
+
+
+
+enum NavigationState {
+    case webviewBuilding,campusMap,campusBus, HSSCBus, Jongro07Bus, MapView
+}
+
+
 @main
 struct skkumapApp: App {
-    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
-    @State var movedeeplinktext: String = ""
-    @State private var test : String = "hi"
+    @State private var path = NavigationPath()
     
     var body: some Scene {
         WindowGroup {
-//                SubLaunchScreen()
-                MapView(argument: $test)
-                .environment(\.deepLinkText, movedeeplinktext)
-                .onOpenURL(perform: { url in
-
-                    movedeeplinktext = url.absoluteString.removingPercentEncoding ?? ""
-                    
-                       
-                    
-                })
-//            Webview_building()
-//            MapView()
-//            Jongro07BusMainView()
+            
+            NavigationStack(path: $path) {
+                VStack {
+                    MapView(path: $path)
+                }
+                .navigationDestination(for: NavigationState.self) { route in
+                    switch route {
+                        case .webviewBuilding:
+                            Webview_building(path: $path).navigationBarBackButtonHidden(true)
+                        case .campusMap:
+                            CampusBusView(path: $path).navigationBarBackButtonHidden(true)
+                        case .campusBus:
+                            CampusBusView(path: $path).navigationBarBackButtonHidden(true)
+                        case .HSSCBus:
+                            MainBusMainView(busType: .HSSCBus).navigationBarBackButtonHidden(true)
+                        case .Jongro07Bus:
+                            MainBusMainView(busType: .Jongro07Bus).navigationBarBackButtonHidden(true)
+                        case .MapView:
+                            MapView(path: $path).navigationBarBackButtonHidden(true)
+                    }
+                }
+            }
         }
     }
-}
-
-struct DeepLinkEnv: EnvironmentKey {
-  static let defaultValue = ""
-}
-
-extension EnvironmentValues {
-  var deepLinkText: String {
-    get { self[DeepLinkEnv.self] }
-    set { self[DeepLinkEnv.self] = newValue }
-  }
 }

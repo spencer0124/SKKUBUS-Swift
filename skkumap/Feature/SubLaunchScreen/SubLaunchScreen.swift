@@ -15,13 +15,8 @@ extension Color {
 
 struct SubLaunchScreen: View {
     
+    @Binding var path: NavigationPath
     @State private var animateGradient: Bool = false
-    @State private var toNextView : Bool = false
-    @State private var test : String = "hi"
-    
-    
-    
-    
     
     
     var body: some View {
@@ -69,9 +64,6 @@ struct SubLaunchScreen: View {
                                     .green2.opacity(0.7),
                                     .green2.opacity(0.3),
                                     .green2.opacity(0.01),
-                                    
-                                    
-                                    
                                 ]),
                                 startPoint: .top,
                                 endPoint: .bottom
@@ -86,13 +78,13 @@ struct SubLaunchScreen: View {
                             DispatchQueue.main.async {
                                 animateGradient = true
                             }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                                 // 1.3s for animation + 0.5s delay
                                 UIView.setAnimationsEnabled(false)
                                 
                                 
                                 // 페이지 이동 코드 넣기
-                                toNextView = true
+                                path.append(NavigationState.MapView)
                                 
                                 
                                 // 위에서 false 했다가 다시 true로 바꿔주기 (ui 버그 수정)
@@ -105,7 +97,7 @@ struct SubLaunchScreen: View {
                         }
                 }
             }
-            .navigationDestination(isPresented: $toNextView, destination: {MapView(argument: $test ).navigationBarBackButtonHidden(true)})
+            
             
             
             
@@ -115,5 +107,5 @@ struct SubLaunchScreen: View {
 }
 
 #Preview {
-    SubLaunchScreen()
+    SubLaunchScreen(path: .constant(NavigationPath()))
 }

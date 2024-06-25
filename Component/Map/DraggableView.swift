@@ -18,9 +18,9 @@ struct DraggableView: View {
     @Binding var sheetPosition: SheetPosition
     @Binding var currentOffset: CGFloat
     
-    @Binding var moveToHSSCBus: Bool
-    @Binding var moveToCampusBus: Bool
-    @Binding var moveToJongro07Bus: Bool
+  
+    
+    @Binding var path: NavigationPath
     
    
     
@@ -71,24 +71,30 @@ struct DraggableView: View {
             VStack(alignment: .leading, spacing: 0) {
                 if currentPage == 1 {
                     BusInfoRow(iconName: "flaticon_bus1", mainTitle: "인사캠 셔틀버스", subtitle: "정차소(인문.농구장) ↔ 600주년 기념관", boxText: "성대", themeColor: Color(UIColor.customDeepGreen1))
+                        .contentShape(Rectangle())
                         .onTapGesture {
-                            moveToHSSCBus = true
+                            path.append(NavigationState.HSSCBus)
                         }
                     BusInfoRow(iconName: "flaticon_bus1", mainTitle: "인자셔틀", subtitle: "인사캠 ↔ 자과캠", boxText: "성대", themeColor: Color(UIColor.customDeepGreen1))
+                        .contentShape(Rectangle())
                         .onTapGesture {
-                            moveToCampusBus = true
+                            
+                            path.append(NavigationState.campusBus)
                         }
                     BusInfoRow(iconName: "flaticon_bus1", mainTitle: "종로02", subtitle: "성균관대학교 ↔ 종각역YMCA", boxText: "마을", themeColor: .green)
+                        .contentShape(Rectangle())
                         .onTapGesture {
-                            moveToJongro07Bus = true
+                            path.append(NavigationState.Jongro07Bus)
                         }
                     BusInfoRow(iconName: "flaticon_bus1", mainTitle: "종로07", subtitle: "명륜새마을금고 ↔ 명륜새마을금고", boxText: "마을", themeColor: .green)
+                        .contentShape(Rectangle())
                         .onTapGesture {
-                            moveToJongro07Bus = true
+                            path.append("campusbus")
                         }
                     BusInfoRow(iconName: "flaticon_bus1", mainTitle: "종로08", subtitle: "명륜3가 ↔ 명륜5가", boxText: "마을", themeColor: .green)
+                        .contentShape(Rectangle())
                         .onTapGesture {
-                            moveToJongro07Bus = true
+                            path.append(NavigationState.Jongro07Bus)
                         }
                 }
 
@@ -126,9 +132,8 @@ struct DraggableView_Previews: PreviewProvider {
             currentPage: .constant(1),
             sheetPosition: .constant(.mid),
             currentOffset: .constant(0), 
-            moveToHSSCBus: .constant(false),
-            moveToCampusBus: .constant(false),
-            moveToJongro07Bus: .constant(false)
+            
+            path: .constant(NavigationPath())
         )
     }
 }
