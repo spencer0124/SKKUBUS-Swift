@@ -87,7 +87,9 @@ struct SubLaunchScreen: View {
                                 
                                 
                                 // 페이지 이동 코드 넣기
+                               
                                 path.append(NavigationState.MapView)
+                                
                                 
                                 
                                 // 위에서 false 했다가 다시 true로 바꿔주기 (ui 버그 수정)

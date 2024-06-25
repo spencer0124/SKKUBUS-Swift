@@ -20,13 +20,13 @@ enum BusType {
             case .HSSCBus:
                 return "인사캠 셔틀"
             case .CampusBus:
-                return "인자 셔틀"
+                return "인자셔틀"
             case .Jongro02Bus:
-                return "종로 02"
+                return "종로02"
             case .Jongro07Bus:
-                return "종로 07"
+                return "종로07"
             case .Jongro08Bus:
-                return "종로 08"
+                return "종로08"
             }
     
         }

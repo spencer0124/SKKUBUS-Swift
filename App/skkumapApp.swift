@@ -27,6 +27,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
+class AppState {
+  static let shared = AppState()
+
+  var swipeEnabled = true    // << by default
+}
+
+
+
 
 
 

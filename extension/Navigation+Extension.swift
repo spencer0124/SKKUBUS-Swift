@@ -8,13 +8,15 @@
 import Foundation
 import UIKit
 
-extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate {
+// extension for swipe-back gesture 
+extension UINavigationController: UIGestureRecognizerDelegate {
     override open func viewDidLoad() {
         super.viewDidLoad()
         interactivePopGestureRecognizer?.delegate = self
     }
 
     public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        return viewControllers.count > 1
+        return AppState.shared.swipeEnabled ?
+                         viewControllers.count > 1 : false // << here !!
     }
 }

@@ -110,9 +110,10 @@ struct MapView: View {
 
 
             .edgesIgnoringSafeArea(.bottom)
-            .onAppear {
-                print("current path!: ")
-                print(path)
+            .onAppear { 
+                AppState.shared.swipeEnabled = false
+//                print("current path!: ")
+//                print(path)
                 Coordinator.shared.checkIfLocationServiceIsEnabled()
 //                if(deepLinkText.isEmpty) {
 //                    print("movedeeplink1 is false")
@@ -121,6 +122,9 @@ struct MapView: View {
 //                    print("movedeeplink1 is true")
 //                    path.append("campubus")
 //                }
+            }
+            .onDisappear {
+                AppState.shared.swipeEnabled = true
             }
            
 

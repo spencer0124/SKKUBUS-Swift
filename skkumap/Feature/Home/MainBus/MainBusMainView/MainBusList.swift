@@ -112,7 +112,11 @@ struct MainBusListView: View {
                 // TOdo: change campusbus
             case .CampusBus:
                 return MainBusMainViewModel.HSSCstations
-            case .Jongro07Bus, .Jongro02Bus, .Jongro08Bus:
+            case .Jongro07Bus:
+                return MainBusMainViewModel.Jongro07stations
+            case .Jongro02Bus:
+                return MainBusMainViewModel.Jongro07stations
+            case .Jongro08Bus:
                 return MainBusMainViewModel.Jongro07stations
             
             }
