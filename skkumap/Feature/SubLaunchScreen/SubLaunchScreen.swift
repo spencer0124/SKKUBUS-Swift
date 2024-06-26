@@ -8,6 +8,8 @@
 import SwiftUI
 
 
+
+
 extension Color {
     static let green1 = Color(hex: 0x3de010)
     static let green2 = Color(hex: 0x2d7d6c)
@@ -17,6 +19,8 @@ struct SubLaunchScreen: View {
     
     @Binding var path: NavigationPath
     @State private var animateGradient: Bool = false
+    
+    @Binding var CampbusMainDeep: Bool
     
     
     var body: some View {
@@ -80,15 +84,22 @@ struct SubLaunchScreen: View {
                             DispatchQueue.main.async {
                                 animateGradient = true
                             }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
                                 // 1.3s for animation + 0.5s delay
                                 
                                 UIView.setAnimationsEnabled(false)
                                 
                                 
-                                // 페이지 이동 코드 넣기
-                               
+                                // 페이지 이동
                                 path.append(NavigationState.MapView)
+                                if(CampbusMainDeep) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+                                            path.append(NavigationState.campusBus)
+                                        }
+                                    }
+                                }
+                                    
                                 
                                 
                                 
@@ -112,5 +123,5 @@ struct SubLaunchScreen: View {
 }
 
 #Preview {
-    SubLaunchScreen(path: .constant(NavigationPath()))
+    SubLaunchScreen(path: .constant(NavigationPath()), CampbusMainDeep: .constant(false))
 }

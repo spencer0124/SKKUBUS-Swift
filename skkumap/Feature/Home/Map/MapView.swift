@@ -15,20 +15,14 @@ enum Route {
     case link1, link2
 }
 
+
+
 struct MapView: View {
-    // 전체 path 관리
     @Binding var path: NavigationPath
-    
-    
-    
-    
     @StateObject var coordinator: Coordinator = Coordinator.shared
     
-    // 하단 메뉴바 3개 중에 고르는거
-    // 페이지 내부에서 변하는거지, 페이지 외부랑은 상관없음
+    // 하단 메뉴바 3개 상태관리
     @State private var currentPage: Int = 1
-    
-    
     
     
     
@@ -111,17 +105,9 @@ struct MapView: View {
 
             .edgesIgnoringSafeArea(.bottom)
             .onAppear { 
+               
                 AppState.shared.swipeEnabled = false
-//                print("current path!: ")
-//                print(path)
                 Coordinator.shared.checkIfLocationServiceIsEnabled()
-//                if(deepLinkText.isEmpty) {
-//                    print("movedeeplink1 is false")
-//                    
-//                } else {
-//                    print("movedeeplink1 is true")
-//                    path.append("campubus")
-//                }
             }
             .onDisappear {
                 AppState.shared.swipeEnabled = true

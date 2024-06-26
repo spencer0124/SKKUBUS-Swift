@@ -10,6 +10,11 @@ import NMapsMap
 import CoreLocation
 
 struct NaverMap: UIViewRepresentable {
+   
+    
+    func updateUIView(_ uiView: NMFNaverMapView, context: Context) {
+           
+        }
     
     func makeCoordinator() -> Coordinator {
         Coordinator.shared
@@ -20,7 +25,7 @@ struct NaverMap: UIViewRepresentable {
         return mapView
     }
     
-    func updateUIView(_ uiView: NMFNaverMapView, context: Context) {}
+    
 }
 
 final class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapViewTouchDelegate, CLLocationManagerDelegate {
@@ -35,7 +40,7 @@ final class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, N
     
     override init() {
         super.init()
-        
+            
         let initlat = 37.587241
         let initlng = 126.992858
         
@@ -79,31 +84,32 @@ final class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, N
         case .restricted, .denied:
             print("Location access is restricted or denied.")
         case .authorizedAlways, .authorizedWhenInUse:
-            updateLocation(locationManager.location)
+//            updateLocation(locationManager.location)
+            print("ready to go")
         @unknown default:
             break
         }
     }
     
-    func updateLocation(_ location: CLLocation?) {
-        guard let location = location else { return }
-        coord = (location.coordinate.latitude, location.coordinate.longitude)
-        userLocation = (location.coordinate.latitude, location.coordinate.longitude)
-        let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude))
-        cameraUpdate.animation = .easeIn
-        view.mapView.moveCamera(cameraUpdate)
-        updateLocationOverlay(location)
-    }
-    
-    func updateLocationOverlay(_ location: CLLocation) {
-        let locationOverlay = view.mapView.locationOverlay
-        locationOverlay.location = NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude)
-        locationOverlay.hidden = false
-        locationOverlay.icon = NMFOverlayImage(name: "location_overlay_icon")
-        locationOverlay.iconWidth = CGFloat(NMF_LOCATION_OVERLAY_SIZE_AUTO)
-        locationOverlay.iconHeight = CGFloat(NMF_LOCATION_OVERLAY_SIZE_AUTO)
-        locationOverlay.anchor = CGPoint(x: 0.5, y: 1)
-    }
+//    func updateLocation(_ location: CLLocation?) {
+//        guard let location = location else { return }
+//        coord = (location.coordinate.latitude, location.coordinate.longitude)
+//        userLocation = (location.coordinate.latitude, location.coordinate.longitude)
+//        let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude))
+//        cameraUpdate.animation = .easeIn
+//        view.mapView.moveCamera(cameraUpdate)
+//        updateLocationOverlay(location)
+//    }
+//    
+//    func updateLocationOverlay(_ location: CLLocation) {
+//        let locationOverlay = view.mapView.locationOverlay
+//        locationOverlay.location = NMGLatLng(lat: location.coordinate.latitude, lng: location.coordinate.longitude)
+//        locationOverlay.hidden = false
+//        locationOverlay.icon = NMFOverlayImage(name: "location_overlay_icon")
+//        locationOverlay.iconWidth = CGFloat(NMF_LOCATION_OVERLAY_SIZE_AUTO)
+//        locationOverlay.iconHeight = CGFloat(NMF_LOCATION_OVERLAY_SIZE_AUTO)
+//        locationOverlay.anchor = CGPoint(x: 0.5, y: 1)
+//    }
     
     func getNaverMapView() -> NMFNaverMapView {
         return view
@@ -144,6 +150,8 @@ final class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, N
         pathOverlay.outlineColor = UIColor.white
         pathOverlay.mapView = mapView
     }
+    
+    
 }
 
 // MARK: - Campus Markers

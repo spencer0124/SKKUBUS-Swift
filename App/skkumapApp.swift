@@ -47,13 +47,16 @@ enum NavigationState {
 struct skkumapApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @State private var path = NavigationPath()
+    @State var CampbusMainDeep: Bool = false
     
     var body: some Scene {
         WindowGroup {
-            
             NavigationStack(path: $path) {
                 VStack {
-                    SubLaunchScreen(path: $path)
+                    SubLaunchScreen(path: $path, CampbusMainDeep: $CampbusMainDeep)
+                        .onOpenURL(perform: { url in
+                            CampbusMainDeep = true
+                        })
 //                    MapView(path: $path)
                 }
                 .navigationDestination(for: NavigationState.self) { route in

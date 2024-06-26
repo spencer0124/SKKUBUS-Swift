@@ -17,3 +17,5 @@ extension Color {
         self.init(.sRGB, red: red, green: green, blue: blue, opacity: opacity)
     }
 }
+
+let deepgreen = Color(hex: 0xFF003626)
