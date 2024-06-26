@@ -70,12 +70,12 @@ struct DraggableView: View {
 
             VStack(alignment: .leading, spacing: 0) {
                 if currentPage == 1 {
-                    BusInfoRow(iconName: "flaticon_bus1", mainTitle: "인사캠 셔틀버스", subtitle: "정차소(인문.농구장) ↔ 600주년 기념관", boxText: "성대", themeColor: Color(UIColor.customDeepGreen1))
+                    BusInfoRow(iconName: "flaticon_bus1", mainTitle: "인사캠 셔틀버스", subtitle: "정차소(인문.농구장) ↔ 600주년 기념관", boxText: "성대", themeColor: CustomColor.deepgreen)
                         .contentShape(Rectangle())
                         .onTapGesture {
                             path.append(NavigationState.HSSCBus)
                         }
-                    BusInfoRow(iconName: "flaticon_bus1", mainTitle: "인자셔틀", subtitle: "인사캠 ↔ 자과캠", boxText: "성대", themeColor: Color(UIColor.customDeepGreen1))
+                    BusInfoRow(iconName: "flaticon_bus1", mainTitle: "인자셔틀", subtitle: "인사캠 ↔ 자과캠", boxText: "성대", themeColor: CustomColor.deepgreen)
                         .contentShape(Rectangle())
                         .onTapGesture {
                             

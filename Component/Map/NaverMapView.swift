@@ -134,10 +134,10 @@ final class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, N
     // Add path overlays
     func addPathOverlays(to mapView: NMFMapView) {
         let routes = [jongro07Route, jongro02Route] // 경로 배열
-        let colors = [UIColor.customDeepGreen1, UIColor.customDeepGreen1] // 각 경로에 적용할 색상 배열
+        let colors = [CustomColor.deepgreen, CustomColor.deepgreen] // 각 경로에 적용할 색상 배열
         
         for (index, route) in routes.enumerated() {
-            createAndAddPath(route: route, color: colors[index], to: mapView)
+            createAndAddPath(route: route, color: UIColor(colors[index]), to: mapView)
         }
     }
 

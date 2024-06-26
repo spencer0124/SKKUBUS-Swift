@@ -18,7 +18,7 @@ struct BusMainNavigationBar: View {
     
     init(
         title: String = "testtitle",
-        backgroundColor: Color = .customDeepGreen1,
+        backgroundColor: Color = CustomColor.deepgreen,
         isDisplayLeftBtn: Bool = true,
         isDisplayRightBtn: Bool = true,
         leftBtnAction: @escaping () -> Void = {},
@@ -102,5 +102,5 @@ struct BusMainNavigationBar: View {
 }
 
 #Preview {
-    BusMainNavigationBar(title: "testtitle", backgroundColor: .customDeepGreen1, isDisplayLeftBtn: true, isDisplayRightBtn: true, leftBtnAction: {}, RightBtnAction: {}, RightBtnType: .info)
+    BusMainNavigationBar(title: "testtitle", backgroundColor: CustomColor.deepgreen, isDisplayLeftBtn: true, isDisplayRightBtn: true, leftBtnAction: {}, RightBtnAction: {}, RightBtnType: .info)
 }

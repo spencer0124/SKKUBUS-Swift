@@ -12,7 +12,7 @@
 import SwiftUI
 
 struct TopSafeAreaColorView: View {
-    var color: Color = .customDeepGreen1
+    var color: Color = CustomColor.deepgreen
     
     
     var body: some View {
@@ -25,5 +25,5 @@ struct TopSafeAreaColorView: View {
 }
 
 #Preview {
-    TopSafeAreaColorView(color: .customDeepGreen1)
+    TopSafeAreaColorView(color: CustomColor.deepgreen)
 }

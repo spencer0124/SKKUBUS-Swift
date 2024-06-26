@@ -157,7 +157,7 @@ struct CampusBusView: View {
                                     
                                 Text("10:26AM")
                                     .font(.system(size: 20, weight: .semibold))
-                                    .foregroundColor(deepgreen)
+                                    .foregroundColor(CustomColor.deepgreen)
                             }
                             
                             Spacer()
@@ -191,7 +191,7 @@ struct CampusBusView: View {
                                     
                                 Text("11:35AM")
                                     .font(.system(size: 20, weight: .semibold))
-                                    .foregroundColor(deepgreen)
+                                    .foregroundColor(CustomColor.deepgreen)
                             }
                         
                         }

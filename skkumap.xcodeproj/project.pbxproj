@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		023BE5A52911D38624E32814 /* Pods_skkumap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF3A78AF985683E00DBA27 /* Pods_skkumap.framework */; };
 		9A5AF5C20E815D7BFA934C0E /* Pods_skkumapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05128ED7D5607FB1094C8F7 /* Pods_skkumapTests.framework */; };
+		C4183EB42C2BEA6A00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
+		C4183EB52C2BEA6B00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
+		C4183EB62C2BEA6C00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
 		C43067D72B458D25008BF4D4 /* MainBusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D62B458D25008BF4D4 /* MainBusModel.swift */; };
 		C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D92B4594DC008BF4D4 /* HTTPClient.swift */; };
 		C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067DB2B45957B008BF4D4 /* URL+extension.swift */; };
@@ -1064,6 +1067,7 @@
 				C4A6E9BE2B35CFB0001545DA /* BusArrival.swift in Sources */,
 				C4A6E9BA2B35CFB0001545DA /* BusArrivalBundle.swift in Sources */,
 				C4A6E9BC2B35CFB0001545DA /* BusArrivalLiveActivity.swift in Sources */,
+				C4183EB52C2BEA6B00D92638 /* Color+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1072,6 +1076,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4CFD2492B34767200CD8C0B /* homewidget02.swift in Sources */,
+				C4183EB62C2BEA6C00D92638 /* Color+extension.swift in Sources */,
 				C4CFD2472B34767200CD8C0B /* homewidget02Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1083,6 +1088,7 @@
 				C4ED9AE52C29545E003831F8 /* homeInjaWidget.swift in Sources */,
 				C4ED9AE32C29545E003831F8 /* homeInjaWidgetBundle.swift in Sources */,
 				C4ED9AE72C29545E003831F8 /* AppIntent.swift in Sources */,
+				C4183EB42C2BEA6A00D92638 /* Color+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

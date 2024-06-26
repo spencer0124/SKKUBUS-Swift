@@ -158,7 +158,7 @@ struct BusArrivalLiveActivity: Widget {
 //                    .monospacedDigit()
             }
             .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(.customDeepGreen1)
+            .keylineTint(CustomColor.deepgreen)
         }
     }
 }

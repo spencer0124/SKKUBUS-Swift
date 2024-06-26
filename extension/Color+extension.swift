@@ -18,4 +18,22 @@ extension Color {
     }
 }
 
-let deepgreen = Color(hex: 0xFF003626)
+
+struct CustomColor {
+    static let deepgreen = Color("DeepGreen1")
+    static let gradientGreen1 = Color("GradientGreen1")
+    static let gradientGreen2 = Color("GradientGreen2")
+}
+
+
+extension UIColor {
+    convenience init(_ color: Color) {
+        let components = color.cgColor?.components
+        let red = components?[0] ?? 0.0
+        let green = components?[1] ?? 0.0
+        let blue = components?[2] ?? 0.0
+        let alpha = components?.count ?? 0 > 3 ? components?[3] ?? 1.0 : 1.0
+
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
+    }
+}

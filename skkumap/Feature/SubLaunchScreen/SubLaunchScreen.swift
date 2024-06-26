@@ -7,24 +7,17 @@
 
 import SwiftUI
 
-
-
-
-extension Color {
-    static let green1 = Color(hex: 0x3de010)
-    static let green2 = Color(hex: 0x2d7d6c)
-}
-
 struct SubLaunchScreen: View {
-    
     @Binding var path: NavigationPath
+    
+    // 애니메이션 관리
     @State private var animateGradient: Bool = false
     
+    // Deeplink에 따른 Path 분기처리
     @Binding var CampbusMainDeep: Bool
     
     
     var body: some View {
-        
             VStack {
                 Spacer()
                 HStack {
@@ -35,39 +28,30 @@ struct SubLaunchScreen: View {
                             .renderingMode(.template)
                             .frame(width: 150, height: 150)
                             .foregroundColor(.white)
-                        
                         Image("skku_text")
                             .resizable()
                             .renderingMode(.template)
                             .scaledToFit()
                             .frame(height: 50)
                             .foregroundColor(.white)
-                        
-                        
-                        
                         Spacer()
                             .frame(height: 270)
-                        
                     }
-                    
                     Spacer()
                 }
-                
                 Spacer()
             }
-            
             .background {
                 ZStack {
-                    Color.customDeepGreen1.edgesIgnoringSafeArea(.all)
-                    
+                    CustomColor.deepgreen.edgesIgnoringSafeArea(.all)
                     Rectangle()
                         .fill(
                             LinearGradient(
                                 gradient: Gradient(colors: [
-                                    .green2.opacity(0.9),
-                                    .green2.opacity(0.7),
-                                    .green2.opacity(0.3),
-                                    .green2.opacity(0.01),
+                                    CustomColor.gradientGreen2.opacity(0.9),
+                                    CustomColor.gradientGreen2.opacity(0.7),
+                                    CustomColor.gradientGreen2.opacity(0.3),
+                                    CustomColor.gradientGreen2.opacity(0.01),
                                 ]),
                                 startPoint: .top,
                                 endPoint: .bottom
@@ -77,18 +61,12 @@ struct SubLaunchScreen: View {
                         .offset(y: animateGradient ? 50 : -UIScreen.main.bounds.height * 1.2)
                         .animation(Animation.easeInOut(duration: 1.3), value: animateGradient)
                         .onAppear {
-                            
-                           
-                            
                             // 이걸로 감싸주지 않으면 Top left에서 애니메이션이 시작한다
                             DispatchQueue.main.async {
                                 animateGradient = true
                             }
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
-                                // 1.3s for animation + 0.5s delay
-                                
                                 UIView.setAnimationsEnabled(false)
-                                
                                 
                                 // 페이지 이동
                                 path.append(NavigationState.MapView)
@@ -99,9 +77,6 @@ struct SubLaunchScreen: View {
                                         }
                                     }
                                 }
-                                    
-                                
-                                
                                 
                                 // 위에서 false 했다가 다시 true로 바꿔주기 (ui 버그 수정)
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {

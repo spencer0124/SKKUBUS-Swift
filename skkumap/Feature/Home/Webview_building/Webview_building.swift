@@ -35,11 +35,11 @@ struct Webview_building: View {
         
 //        NavigationStack {
             ZStack {
-                TopSafeAreaColorView(color: .customDeepGreen1)
+                TopSafeAreaColorView(color: CustomColor.deepgreen)
                 VStack {
                     BusMainNavigationBar(
                         title: "성균관대 건물지도",
-                        backgroundColor: .customDeepGreen1,
+                        backgroundColor: CustomColor.deepgreen,
                         isDisplayLeftBtn: true,
                         isDisplayRightBtn: true,
                         leftBtnAction:  {
