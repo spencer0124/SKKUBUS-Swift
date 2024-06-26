@@ -9,92 +9,52 @@ import SwiftUI
 
 struct SubLaunchScreen: View {
     @Binding var path: NavigationPath
-    
-    // 애니메이션 관리
-    @State private var animateGradient: Bool = false
-    
-    // Deeplink에 따른 Path 분기처리
-    @Binding var CampbusMainDeep: Bool
-    
+    @State private var animateGradient: Bool = false // 애니메이션 관리
+    @Binding var CampbusMainDeep: Bool // Deeplink에 따른 Path 분기처리
     
     var body: some View {
             VStack {
                 Spacer()
-                HStack {
-                    Spacer()
-                    VStack(spacing:0) {
-                        Image("skku_logo_black")
-                            .resizable()
-                            .renderingMode(.template)
-                            .frame(width: 150, height: 150)
-                            .foregroundColor(.white)
-                        Image("skku_text")
-                            .resizable()
-                            .renderingMode(.template)
-                            .scaledToFit()
-                            .frame(height: 50)
-                            .foregroundColor(.white)
-                        Spacer()
-                            .frame(height: 270)
-                    }
-                    Spacer()
-                }
+                LogoAndTextView()
                 Spacer()
             }
             .background {
-                ZStack {
-                    CustomColor.deepgreen.edgesIgnoringSafeArea(.all)
-                    Rectangle()
-                        .fill(
-                            LinearGradient(
-                                gradient: Gradient(colors: [
-                                    CustomColor.gradientGreen2.opacity(0.9),
-                                    CustomColor.gradientGreen2.opacity(0.7),
-                                    CustomColor.gradientGreen2.opacity(0.3),
-                                    CustomColor.gradientGreen2.opacity(0.01),
-                                ]),
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                        )
-                        .frame(height: UIScreen.main.bounds.height * 1.2)
-                        .offset(y: animateGradient ? 50 : -UIScreen.main.bounds.height * 1.2)
-                        .animation(Animation.easeInOut(duration: 1.3), value: animateGradient)
-                        .onAppear {
-                            // 이걸로 감싸주지 않으면 Top left에서 애니메이션이 시작한다
-                            DispatchQueue.main.async {
-                                animateGradient = true
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
-                                UIView.setAnimationsEnabled(false)
-                                
-                                // 페이지 이동
-                                path.append(NavigationState.MapView)
-                                if(CampbusMainDeep) {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                                            path.append(NavigationState.campusBus)
-                                        }
-                                    }
-                                }
-                                
-                                // 위에서 false 했다가 다시 true로 바꿔주기 (ui 버그 수정)
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                                    UIView.setAnimationsEnabled(true)
-                                }
-                                
-                                
-                            }
+                GradientAnimationView(animateGradient: $animateGradient)
+            }
+            .onAppear {
+                startGradientAnimation()
+            }
+    }
+    
+    
+    func startGradientAnimation() {
+            // 이걸로 감싸주지 않으면 애니메이션이 left top에서 시작됨
+            DispatchQueue.main.async {
+                animateGradient = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
+                UIView.setAnimationsEnabled(false)
+                
+                // 페이지 이동
+                path.append(NavigationState.MapView)
+                
+                // DeepLink 처리
+                if(CampbusMainDeep) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+                            path.append(NavigationState.campusBus)
                         }
+                    }
+                }
+                
+                // 위에서 false 했다가 다시 true로 바꿔주기 (ui 버그 수정)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    UIView.setAnimationsEnabled(true)
                 }
             }
-            
-            
-            
-            
-            
-        
-    }
+        }
+    
+    
 }
 
 #Preview {

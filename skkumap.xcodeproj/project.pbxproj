@@ -12,6 +12,8 @@
 		C4183EB42C2BEA6A00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
 		C4183EB52C2BEA6B00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
 		C4183EB62C2BEA6C00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
+		C4183EB82C2BF1B700D92638 /* LogoAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4183EB72C2BF1B700D92638 /* LogoAndText.swift */; };
+		C4183EBC2C2BF2BB00D92638 /* GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4183EBB2C2BF2BB00D92638 /* GradientAnimation.swift */; };
 		C43067D72B458D25008BF4D4 /* MainBusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D62B458D25008BF4D4 /* MainBusModel.swift */; };
 		C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D92B4594DC008BF4D4 /* HTTPClient.swift */; };
 		C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067DB2B45957B008BF4D4 /* URL+extension.swift */; };
@@ -149,6 +151,8 @@
 		58F590F62FABCD9F8A5D4A27 /* Pods-skkumapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumapTests.release.xcconfig"; path = "Target Support Files/Pods-skkumapTests/Pods-skkumapTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A22EC62DC3201CF5A36ED77 /* Pods-skkumap-skkumapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skkumap-skkumapUITests.release.xcconfig"; path = "Target Support Files/Pods-skkumap-skkumapUITests/Pods-skkumap-skkumapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B7106FC5E569C33E0F07E27F /* Pods_skkumap_skkumapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skkumap_skkumapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4183EB72C2BF1B700D92638 /* LogoAndText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAndText.swift; sourceTree = "<group>"; };
+		C4183EBB2C2BF2BB00D92638 /* GradientAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimation.swift; sourceTree = "<group>"; };
 		C43067D62B458D25008BF4D4 /* MainBusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBusModel.swift; sourceTree = "<group>"; };
 		C43067D92B4594DC008BF4D4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		C43067DB2B45957B008BF4D4 /* URL+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+extension.swift"; sourceTree = "<group>"; };
@@ -495,6 +499,8 @@
 			isa = PBXGroup;
 			children = (
 				C482D8E52BF6EBF9000FB13B /* SubLaunchScreen.swift */,
+				C4183EB72C2BF1B700D92638 /* LogoAndText.swift */,
+				C4183EBB2C2BF2BB00D92638 /* GradientAnimation.swift */,
 			);
 			path = SubLaunchScreen;
 			sourceTree = "<group>";
@@ -1008,12 +1014,14 @@
 				C476096E2BF3B09400FE17EB /* NetworkMonitor.swift in Sources */,
 				C4C5C33C2B4181B800B588C8 /* BusAnimation.swift in Sources */,
 				C47179912B3432B40039D376 /* MapView.swift in Sources */,
+				C4183EBC2C2BF2BB00D92638 /* GradientAnimation.swift in Sources */,
 				C4BDF23A2B4410D700733458 /* TopInfo.swift in Sources */,
 				C498D5802BF759D800C91FDA /* SearchIcon.swift in Sources */,
 				C43067D72B458D25008BF4D4 /* MainBusModel.swift in Sources */,
 				C4D49D332B36A7B3003D19C6 /* Map.swift in Sources */,
 				C4636C6A2B45596100CA68D5 /* BusType.swift in Sources */,
 				C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */,
+				C4183EB82C2BF1B700D92638 /* LogoAndText.swift in Sources */,
 				C4BDF22D2B43FE3900733458 /* SubwayCircleIcon.swift in Sources */,
 				C4C5C3442B419A6300B588C8 /* BottomAdView.swift in Sources */,
 				C476096B2BF3AEDF00FE17EB /* Webview_buildingVM.swift in Sources */,
