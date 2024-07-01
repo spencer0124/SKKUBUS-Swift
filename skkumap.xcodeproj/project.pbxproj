@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		023BE5A52911D38624E32814 /* Pods_skkumap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF3A78AF985683E00DBA27 /* Pods_skkumap.framework */; };
 		9A5AF5C20E815D7BFA934C0E /* Pods_skkumapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05128ED7D5607FB1094C8F7 /* Pods_skkumapTests.framework */; };
+		C40A14A32C2CE6DB000D9745 /* BusArrivalLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */; };
 		C4183EB42C2BEA6A00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
 		C4183EB52C2BEA6B00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
 		C4183EB62C2BEA6C00D92638 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C5C3342B40780900B588C8 /* Color+extension.swift */; };
 		C4183EB82C2BF1B700D92638 /* LogoAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4183EB72C2BF1B700D92638 /* LogoAndText.swift */; };
 		C4183EBC2C2BF2BB00D92638 /* GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4183EBB2C2BF2BB00D92638 /* GradientAnimation.swift */; };
+		C4183EBE2C2BFB5300D92638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C471795F2B34307F0039D376 /* Assets.xcassets */; };
+		C4183EBF2C2BFB5400D92638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C471795F2B34307F0039D376 /* Assets.xcassets */; };
+		C4183EC02C2BFB5400D92638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C471795F2B34307F0039D376 /* Assets.xcassets */; };
 		C43067D72B458D25008BF4D4 /* MainBusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D62B458D25008BF4D4 /* MainBusModel.swift */; };
 		C43067DA2B4594DC008BF4D4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067D92B4594DC008BF4D4 /* HTTPClient.swift */; };
 		C43067DC2B45957B008BF4D4 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43067DB2B45957B008BF4D4 /* URL+extension.swift */; };
@@ -27,8 +31,6 @@
 		C471796D2B34307F0039D376 /* skkumapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471796C2B34307F0039D376 /* skkumapTests.swift */; };
 		C47179772B34307F0039D376 /* skkumapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179762B34307F0039D376 /* skkumapUITests.swift */; };
 		C47179792B34307F0039D376 /* skkumapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179782B34307F0039D376 /* skkumapUITestsLaunchTests.swift */; };
-		C471798A2B3432620039D376 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179892B3432620039D376 /* HomeView.swift */; };
-		C471798C2B34326C0039D376 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471798B2B34326C0039D376 /* HomeViewModel.swift */; };
 		C471798F2B3432AD0039D376 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471798E2B3432AC0039D376 /* MapViewModel.swift */; };
 		C47179912B3432B40039D376 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47179902B3432B40039D376 /* MapView.swift */; };
 		C47179932B3433510039D376 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47179922B3433510039D376 /* Launch Screen.storyboard */; };
@@ -49,7 +51,6 @@
 		C4A6E9BE2B35CFB0001545DA /* BusArrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9BD2B35CFB0001545DA /* BusArrival.swift */; };
 		C4A6E9C02B35CFB1001545DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A6E9BF2B35CFB1001545DA /* Assets.xcassets */; };
 		C4A6E9C42B35CFB1001545DA /* BusArrivalExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4A6E9B52B35CFB0001545DA /* BusArrivalExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C4A6E9CB2B35D7A4001545DA /* BusArrivalLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A6E9BB2B35CFB0001545DA /* BusArrivalLiveActivity.swift */; };
 		C4BDF22D2B43FE3900733458 /* SubwayCircleIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF22C2B43FE3900733458 /* SubwayCircleIcon.swift */; };
 		C4BDF2312B44044E00733458 /* UIScreen+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF2302B44044E00733458 /* UIScreen+extension.swift */; };
 		C4BDF2352B44062A00733458 /* BusMainNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BDF2342B44062A00733458 /* BusMainNavigationBar.swift */; };
@@ -169,8 +170,6 @@
 		C47179722B34307F0039D376 /* skkumapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skkumapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47179762B34307F0039D376 /* skkumapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skkumapUITests.swift; sourceTree = "<group>"; };
 		C47179782B34307F0039D376 /* skkumapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skkumapUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C47179892B3432620039D376 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		C471798B2B34326C0039D376 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C471798E2B3432AC0039D376 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		C47179902B3432B40039D376 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C47179922B3433510039D376 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -444,8 +443,6 @@
 				C47609672BF3438100FE17EB /* Webview_building */,
 				C4C5C32F2B40655B00B588C8 /* MainBus */,
 				C471798D2B3432990039D376 /* Map */,
-				C47179892B3432620039D376 /* HomeView.swift */,
-				C471798B2B34326C0039D376 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -873,6 +870,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4183EBF2C2BFB5400D92638 /* Assets.xcassets in Resources */,
 				C4A6E9C02B35CFB1001545DA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -881,6 +879,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4183EBE2C2BFB5300D92638 /* Assets.xcassets in Resources */,
 				C4CFD24B2B34767300CD8C0B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -889,6 +888,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4183EC02C2BFB5400D92638 /* Assets.xcassets in Resources */,
 				C4ED9AE92C29545F003831F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1010,7 +1010,6 @@
 				C45F57EE2BF719580025842B /* CustomNavigationBar.swift in Sources */,
 				C4BDF23E2B45155000733458 /* LicensePlate.swift in Sources */,
 				C4C5C3312B40659800B588C8 /* MainBusMainView.swift in Sources */,
-				C471798A2B3432620039D376 /* HomeView.swift in Sources */,
 				C476096E2BF3B09400FE17EB /* NetworkMonitor.swift in Sources */,
 				C4C5C33C2B4181B800B588C8 /* BusAnimation.swift in Sources */,
 				C47179912B3432B40039D376 /* MapView.swift in Sources */,
@@ -1026,7 +1025,6 @@
 				C4C5C3442B419A6300B588C8 /* BottomAdView.swift in Sources */,
 				C476096B2BF3AEDF00FE17EB /* Webview_buildingVM.swift in Sources */,
 				C4C5C33A2B411C4500B588C8 /* MainBusMainVM.swift in Sources */,
-				C4A6E9CB2B35D7A4001545DA /* BusArrivalLiveActivity.swift in Sources */,
 				C4BDF23C2B4410F100733458 /* TopInfoType.swift in Sources */,
 				C471798F2B3432AD0039D376 /* MapViewModel.swift in Sources */,
 				C498D57E2BF759A300C91FDA /* SearchView.swift in Sources */,
@@ -1045,7 +1043,7 @@
 				C45F57F02BF719EC0025842B /* DraggableView.swift in Sources */,
 				C482D8E22BF6DEC6000FB13B /* Webview_bulidingModel.swift in Sources */,
 				C4BDF2372B4406BF00733458 /* BusMainBtnType.swift in Sources */,
-				C471798C2B34326C0039D376 /* HomeViewModel.swift in Sources */,
+				C40A14A32C2CE6DB000D9745 /* BusArrivalLiveActivity.swift in Sources */,
 				C4D49D362B36B7D9003D19C6 /* Constants.swift in Sources */,
 				C4C5C3372B411C1D00B588C8 /* BusListComponent.swift in Sources */,
 			);
@@ -1259,7 +1257,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = skkumap/skkumap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 38;
 				DEVELOPMENT_ASSET_PATHS = "\"skkumap/Preview Content\"";
 				DEVELOPMENT_TEAM = 95HGXTX76L;
 				ENABLE_PREVIEWS = YES;
@@ -1280,7 +1278,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1298,7 +1296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = skkumap/skkumap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 38;
 				DEVELOPMENT_ASSET_PATHS = "\"skkumap/Preview Content\"";
 				DEVELOPMENT_TEAM = 95HGXTX76L;
 				ENABLE_PREVIEWS = YES;
@@ -1319,7 +1317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.skkumap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

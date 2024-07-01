@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ActivityKit
 
 struct ScheduleItem: Identifiable {
     var id = UUID()
@@ -113,6 +114,50 @@ struct CampusBusView: View {
                 
                 TransitInfoView()
                 Spacer().frame(height: 13)
+                                if #available(iOS 16.2, *) {
+                                    Button("Start Acitivty") {
+                
+                                        print("button 1")
+                
+                                        let busArrivalLiveAttributes = BusArrivalAttributes(timerName: "testtimername")
+                                        let contentState = BusArrivalAttributes.ContentState(value: 7000, step: 0, message: "test", remainingDistance: "75")
+                                        do {
+                                            let activity = try Activity<BusArrivalAttributes>.request(
+                                                attributes: busArrivalLiveAttributes,
+                                                contentState: contentState,
+                                                pushType: .token
+                
+                                            )
+                                            print("button 2")
+                                            let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
+                                            Task {
+//                                                for try await token in activity.pushTokenUpdates {
+//                                                    let tokenParts = token.map { data in String(format: "%02.2hhx", data) }
+//                                                    let token = tokenParts.joined()
+//                                                    print("Live activity token updated: \(token)")
+//                
+//                                                    let db = Firestore.firestore()
+//                
+//                
+//                                                    do {
+//                                                        try await db.collection("bus/token/push_tokens")
+//                                                            .document(deviceId)
+//                                                            .setData([ "token": token ])
+//                                                        print("success, token: \(token)")
+//                                                    } catch {
+//                                                        print("failed to update token: \(error.localizedDescription)")
+//                                                    }
+//                                                }
+                                            }
+                                            print("button 3")
+                                        } catch {
+                                            print("button error")
+                                            print(error)
+                                        }
+                                    }
+                
+                
+                                }
                 
             }
             
@@ -198,9 +243,6 @@ struct CampusBusView: View {
                         .padding(.horizontal, 19)
                         .padding(.top, 15)
                     }
-             
-                    
-                    
                     .padding(.bottom)
                 }
                 .frame(height: 120) // 위쪽 파트 높이
@@ -229,7 +271,7 @@ struct CampusBusView: View {
                     }
                 }
                 Spacer().frame(height: 15)
-                ScheduleTableView()
+//                ScheduleTableView()
                 
             }
             .cornerRadius(20)

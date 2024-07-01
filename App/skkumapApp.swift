@@ -29,14 +29,10 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 class AppState {
   static let shared = AppState()
-
-  var swipeEnabled = true    // << by default
+    // back-swipe 제스쳐 enable 여부
+    // default: true (back-swipe 가능)
+    var swipeEnabled = true
 }
-
-
-
-
-
 
 enum NavigationState {
     case webviewBuilding,campusMap,campusBus, HSSCBus, Jongro07Bus, MapView
@@ -54,6 +50,9 @@ struct skkumapApp: App {
             NavigationStack(path: $path) {
                 VStack {
                     SubLaunchScreen(path: $path, CampbusMainDeep: $CampbusMainDeep)
+                    
+                        // ToDo: deeplink가 추가될 경우, 주소 검증이 필요함
+                    
                         .onOpenURL(perform: { url in
                             CampbusMainDeep = true
                         })
